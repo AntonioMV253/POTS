@@ -7,6 +7,7 @@ public class DayAndNightCycle : MonoBehaviour
 {
     [SerializeField] private Gradient lightColor;
     [SerializeField] public GameObject light;
+    [SerializeField] private ParticleSystem rainDrops; // Referencia al sistema de partículas
 
     private int days;
     public int Days => days;
@@ -18,6 +19,16 @@ public class DayAndNightCycle : MonoBehaviour
     public delegate void OnDayChanged();
 
     public OnDayChanged DayChanged;
+
+    // Tiempo aleatorio para ocultar/mostrar el sistema de partículas
+    private float randomParticleToggleTime = 0f;
+    private float particleToggleInterval = 10f; // Intervalo de tiempo para cambiar las partículas (en segundos)
+
+    private void Start()
+    {
+        // Inicialmente, mostramos el sistema de partículas
+        ShowRainDrops();
+    }
 
     private void Update()
     {
@@ -35,7 +46,35 @@ public class DayAndNightCycle : MonoBehaviour
             canChangeDay = true;
         time += Time.deltaTime;
         light.GetComponent<Light2D>().color = lightColor.Evaluate(time * 0.002f);
+
+        // Actualizar el temporizador para ocultar/mostrar partículas
+        randomParticleToggleTime += Time.deltaTime;
+        if (randomParticleToggleTime >= particleToggleInterval)
+        {
+            // Cambiar el estado de las partículas aleatoriamente
+            if (Random.value < 0.5f)
+            {
+                ShowRainDrops();
+            }
+            else
+            {
+                HideRainDrops();
+            }
+
+            // Reiniciar el temporizador aleatorio
+            randomParticleToggleTime = 0f;
+        }
+    }
+
+    // Función para mostrar las partículas
+    private void ShowRainDrops()
+    {
+        rainDrops.Play(); // Iniciar el sistema de partículas
+    }
+
+    // Función para ocultar las partículas
+    private void HideRainDrops()
+    {
+        rainDrops.Stop(); // Detener el sistema de partículas
     }
 }
-
-
