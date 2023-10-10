@@ -39,7 +39,7 @@ public class DayAndNightCycle : MonoBehaviour
         if ((int)time == 250 && canChangeDay)
         {
             canChangeDay = false;
-            DayChanged();
+            DayChanged(); 
             days++;
         }
         if ((int)time == 255)
