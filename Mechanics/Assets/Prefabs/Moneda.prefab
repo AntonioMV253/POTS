@@ -125,3 +125,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cantidadMonedas: 1
+  soundClip: {fileID: 8300000, guid: 771b6eb03d594fd47bd8f6346131a9d7, type: 3}
