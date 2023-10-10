@@ -45,6 +45,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Weather
+    uniqueID: 121984795
+    locked: 0
   - name: Signs
     uniqueID: 507700377
     locked: 0
