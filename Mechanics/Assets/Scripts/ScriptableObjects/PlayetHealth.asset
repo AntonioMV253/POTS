@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409cca1c84c5a8e45843f886aa89ef08, type: 3}
   m_Name: PlayetHealth
   m_EditorClassIdentifier: 
-  initialValue: 2
-  RuntimeValue: 2
+  initialValue: 6
+  RuntimeValue: 6
