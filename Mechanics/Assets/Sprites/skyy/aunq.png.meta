@@ -1,0 +1,1147 @@
+fileFormatVersion: 2
+guid: 6a8f4a00a54751f49be518a9e5e010ab
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: aunq_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac88b265ee032e345ad5384bf5ed0786
+      internalID: 219793050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_41
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c904d11c8d7194b8742d72fe67f4d8
+      internalID: 1269526164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_42
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b35cdc08ecfb4a478adf3d701fd6d24
+      internalID: 1532252451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_43
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df442ef70769a40419f0eda07c3e852f
+      internalID: -1640415245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c937cb45e59fcf64ebfea376bda39bbe
+      internalID: 901597183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_65
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2c675f572186f41aa2d0b1d15794ee
+      internalID: -328391782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_66
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2448c8e37347ad74287d68747a410574
+      internalID: -1920169176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_67
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad404e5d59bf89542b73ffe5425f4f7d
+      internalID: 140908401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed92182902c05048bd0d9a2dcd445fd
+      internalID: 1250153002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_89
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e81000a6d39684896bae156af4f211
+      internalID: 1031479735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_90
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8309663cbe70844cb6c6c8f4282348c
+      internalID: 1365262061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_91
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093e1337f663fac43b48767868f76488
+      internalID: -2141057402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_112
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34def9e7c81ff748ae2c055f8e2431a
+      internalID: 131258254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_113
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea0b852691df2c46a8c3958d7fdcfe3
+      internalID: -196002413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_114
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31980d57cfc974f4fbd874c502a22d80
+      internalID: -1249877936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_115
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01c37e923d7bf04bb3fb11a1593a81f
+      internalID: 152335448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_135
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a7d8e4a8f33914a9558c63bc7d818d
+      internalID: 56599139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_136
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a15eb7253434d4483605df8cf440f6
+      internalID: -1077217921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_137
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1299627f016760745911708791c5f3b9
+      internalID: 235966341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_138
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0782451e86ce6d94caeba3018239a01c
+      internalID: -1670670228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_161
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293e37346915dae49a8f3acb3db500a9
+      internalID: 2121453938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_162
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50079bd22b9335f4b820a0fa8c2984f2
+      internalID: 821798372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_282
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015bbcface5e8794d822a726a36fe8ea
+      internalID: 451227959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_283
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dffecd2b333be47afd580bc20be6e5
+      internalID: 1436684612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_284
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b516c8f842fe64bbc3651eae36cfb8
+      internalID: -2143943165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_285
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c40fe44c5883cf479cf6508871cc7f5
+      internalID: -610454933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_306
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bf0da2818ffa0489cb0aefa066d3df
+      internalID: 214505466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_307
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2101cf1398f6be345b82bacaa50f994a
+      internalID: -1576919344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_308
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3da78368c7a1d43baf9663e132d5d0
+      internalID: -1344847949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aunq_309
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe0848ea69c24c498b05bd7a37578c3
+      internalID: 583688678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      aunq_0: 56906009
+      aunq_1: 320635773
+      aunq_10: 414999108
+      aunq_100: 704292698
+      aunq_101: -672480424
+      aunq_102: 1309404578
+      aunq_103: 393718821
+      aunq_104: -881692896
+      aunq_105: 1778015427
+      aunq_106: 1965036854
+      aunq_107: -2128362167
+      aunq_108: 934676151
+      aunq_109: -1015303999
+      aunq_11: -1751706779
+      aunq_110: -443314698
+      aunq_111: 541853824
+      aunq_112: 131258254
+      aunq_113: -196002413
+      aunq_114: -1249877936
+      aunq_115: 152335448
+      aunq_116: 41916226
+      aunq_117: 152832887
+      aunq_118: 332965297
+      aunq_119: 1739414792
+      aunq_12: -1770633188
+      aunq_120: -273914659
+      aunq_121: 642735521
+      aunq_122: 672290581
+      aunq_123: -1228039030
+      aunq_124: -2070536841
+      aunq_125: -1388334867
+      aunq_126: 160490394
+      aunq_127: -590500494
+      aunq_128: -525521890
+      aunq_129: -662156920
+      aunq_13: -676829791
+      aunq_130: 1545288768
+      aunq_131: 273605605
+      aunq_132: 1268468607
+      aunq_133: -82507158
+      aunq_134: 1120255123
+      aunq_135: 56599139
+      aunq_136: -1077217921
+      aunq_137: 235966341
+      aunq_138: -1670670228
+      aunq_139: -924790183
+      aunq_14: 149250222
+      aunq_140: 1747653116
+      aunq_141: 1283040053
+      aunq_142: -143949523
+      aunq_143: -58439928
+      aunq_144: -592386571
+      aunq_145: -645521472
+      aunq_146: 1802937663
+      aunq_147: -1747936628
+      aunq_148: 219681596
+      aunq_149: 1569455039
+      aunq_15: 1544624795
+      aunq_150: 65308505
+      aunq_151: 1838125513
+      aunq_152: -1729468831
+      aunq_153: -1586572425
+      aunq_154: 1799347565
+      aunq_155: -974733909
+      aunq_156: -359403830
+      aunq_157: -209849697
+      aunq_158: 1570094046
+      aunq_159: 806271242
+      aunq_16: -807806371
+      aunq_160: 1560305830
+      aunq_161: 2121453938
+      aunq_162: 821798372
+      aunq_163: 828118297
+      aunq_164: 1080428167
+      aunq_165: -323812594
+      aunq_166: -985654509
+      aunq_167: -1303966490
+      aunq_168: -473311329
+      aunq_169: -1481895674
+      aunq_17: 827758394
+      aunq_170: 823893753
+      aunq_171: 1118093840
+      aunq_172: 786553779
+      aunq_173: 1819538793
+      aunq_174: -881938448
+      aunq_175: -913962042
+      aunq_176: -933863395
+      aunq_177: -1558647596
+      aunq_178: -1589603444
+      aunq_179: -853529958
+      aunq_18: 1286795847
+      aunq_180: 956585019
+      aunq_181: 711856148
+      aunq_182: 1495281203
+      aunq_183: 655393716
+      aunq_184: 834236699
+      aunq_185: 1249455009
+      aunq_186: -956641582
+      aunq_187: -1264167586
+      aunq_188: -816520536
+      aunq_189: -1890619738
+      aunq_19: -1195551236
+      aunq_190: -78324436
+      aunq_191: 141163754
+      aunq_192: 1375021954
+      aunq_193: -1778259527
+      aunq_194: 1553011618
+      aunq_195: 2109837632
+      aunq_196: -1818519611
+      aunq_197: -1989991807
+      aunq_198: 772261156
+      aunq_199: 994903424
+      aunq_2: -1470386303
+      aunq_20: -394847763
+      aunq_200: -1265073917
+      aunq_201: 434652103
+      aunq_202: 552841735
+      aunq_203: 1938496524
+      aunq_204: 307434443
+      aunq_205: 1121977490
+      aunq_206: 1245807065
+      aunq_207: 481164730
+      aunq_208: 1460649244
+      aunq_209: 912024711
+      aunq_21: -219272065
+      aunq_210: -1404966994
+      aunq_211: 240886211
+      aunq_212: 1504477342
+      aunq_213: -1709810245
+      aunq_214: 65754241
+      aunq_215: 1321749248
+      aunq_216: -469173789
+      aunq_217: -1733474709
+      aunq_218: 1941851949
+      aunq_219: -1098443731
+      aunq_22: 622052681
+      aunq_220: -970847945
+      aunq_221: 1665072232
+      aunq_222: -2106049451
+      aunq_223: 1585610737
+      aunq_224: 244807763
+      aunq_225: 2088949067
+      aunq_226: -756491056
+      aunq_227: -161408953
+      aunq_228: -909054273
+      aunq_229: 133851473
+      aunq_23: -84948672
+      aunq_230: 1392461581
+      aunq_231: -1080263076
+      aunq_232: -1117927991
+      aunq_233: 446710471
+      aunq_234: -311466803
+      aunq_235: 1025701674
+      aunq_236: 1976523890
+      aunq_237: -1610892877
+      aunq_238: -2088848862
+      aunq_239: -355360135
+      aunq_24: 61188890
+      aunq_240: 562400214
+      aunq_241: -1859515067
+      aunq_242: 1129966827
+      aunq_243: -797228597
+      aunq_244: 601514565
+      aunq_245: -54905519
+      aunq_246: -1035164505
+      aunq_247: -1239252093
+      aunq_248: -1184944769
+      aunq_249: 1018001063
+      aunq_25: -1005198588
+      aunq_250: -218735776
+      aunq_251: 664764252
+      aunq_252: -1984747856
+      aunq_253: 761747213
+      aunq_254: -486448105
+      aunq_255: -774600238
+      aunq_256: 765632826
+      aunq_257: 1831478418
+      aunq_258: 279323946
+      aunq_259: 1598660048
+      aunq_26: 1946404186
+      aunq_260: 847854405
+      aunq_261: -1395657168
+      aunq_262: -902060930
+      aunq_263: -2038802738
+      aunq_264: -1114765046
+      aunq_265: 1948844762
+      aunq_266: -1769457351
+      aunq_267: 546313685
+      aunq_268: -768414858
+      aunq_269: -1228714129
+      aunq_27: 479486560
+      aunq_270: -1138949933
+      aunq_271: -933998982
+      aunq_272: 1902268922
+      aunq_273: -1166275915
+      aunq_274: 1418787420
+      aunq_275: 1070097850
+      aunq_276: 1777163390
+      aunq_277: 366196698
+      aunq_278: 260244381
+      aunq_279: 605101061
+      aunq_28: 799614680
+      aunq_280: -90694049
+      aunq_281: 1752597574
+      aunq_282: 451227959
+      aunq_283: 1436684612
+      aunq_284: -2143943165
+      aunq_285: -610454933
+      aunq_286: -1537881526
+      aunq_287: -1708079925
+      aunq_288: -1296919962
+      aunq_289: -1235840798
+      aunq_29: 1461508317
+      aunq_290: 433475235
+      aunq_291: 1191224502
+      aunq_292: 810650712
+      aunq_293: -1045353796
+      aunq_294: -397178152
+      aunq_295: 2108669380
+      aunq_296: -423005341
+      aunq_297: 1476968384
+      aunq_298: 994487969
+      aunq_299: 550755685
+      aunq_3: -36475385
+      aunq_30: 747610367
+      aunq_300: 1480681157
+      aunq_301: 1395558452
+      aunq_302: 1187674564
+      aunq_303: 789673601
+      aunq_304: 1160442841
+      aunq_305: 621078266
+      aunq_306: 214505466
+      aunq_307: -1576919344
+      aunq_308: -1344847949
+      aunq_309: 583688678
+      aunq_31: -896486057
+      aunq_310: -671896845
+      aunq_311: -217122159
+      aunq_312: -1748130054
+      aunq_313: -2068961329
+      aunq_314: -349823292
+      aunq_315: -1607144993
+      aunq_316: -1561133005
+      aunq_317: -324748813
+      aunq_318: 149574456
+      aunq_319: 1946186807
+      aunq_32: -71682930
+      aunq_320: -2026212294
+      aunq_321: 1835375912
+      aunq_322: 723409294
+      aunq_323: 1196102250
+      aunq_324: -205614954
+      aunq_325: 1823508227
+      aunq_326: 60109007
+      aunq_327: -296693482
+      aunq_328: 500191864
+      aunq_329: -242318744
+      aunq_33: -1138394446
+      aunq_330: 790324394
+      aunq_331: -1632308261
+      aunq_332: -1472553219
+      aunq_333: -307538296
+      aunq_334: -1853358679
+      aunq_335: -1722650604
+      aunq_336: 1773254717
+      aunq_337: -489615654
+      aunq_338: -2103260458
+      aunq_339: 624732528
+      aunq_34: -1027982871
+      aunq_340: -1759566835
+      aunq_341: -1164575410
+      aunq_342: -285706731
+      aunq_343: 1769788748
+      aunq_344: 1299968775
+      aunq_345: -471272291
+      aunq_346: -1180318829
+      aunq_347: 2122170210
+      aunq_348: -1064283204
+      aunq_349: 1241598743
+      aunq_35: 1863976913
+      aunq_350: 1093685320
+      aunq_351: -101204862
+      aunq_352: -675629284
+      aunq_353: 1894818650
+      aunq_354: 831423011
+      aunq_355: 775195596
+      aunq_356: -763268102
+      aunq_357: -1468920087
+      aunq_358: 1846291378
+      aunq_359: 639847107
+      aunq_36: -162734722
+      aunq_360: 1475453112
+      aunq_361: 161096391
+      aunq_362: 1022165073
+      aunq_363: 434740513
+      aunq_364: 1762278746
+      aunq_365: -1262266649
+      aunq_366: 1701901986
+      aunq_367: -738283975
+      aunq_368: 764161525
+      aunq_369: -236665304
+      aunq_37: 1873304666
+      aunq_370: -1193592205
+      aunq_371: -1226243675
+      aunq_372: -695292933
+      aunq_373: -252955095
+      aunq_374: 1370744029
+      aunq_375: -462852173
+      aunq_376: 310128078
+      aunq_377: 37807384
+      aunq_378: -1163709970
+      aunq_379: 1224912711
+      aunq_38: 1295111333
+      aunq_380: -1364246343
+      aunq_381: 400415954
+      aunq_39: -842002027
+      aunq_4: 1853335789
+      aunq_40: 219793050
+      aunq_41: 1269526164
+      aunq_42: 1532252451
+      aunq_43: -1640415245
+      aunq_44: -135290638
+      aunq_45: -1659228931
+      aunq_46: -2124015872
+      aunq_47: -220184481
+      aunq_48: 1979454995
+      aunq_49: -1091464077
+      aunq_5: 711472999
+      aunq_50: -1442456464
+      aunq_51: 716468787
+      aunq_52: 873006355
+      aunq_53: -1872588570
+      aunq_54: 477841617
+      aunq_55: 1580298902
+      aunq_56: -1331607137
+      aunq_57: 1238003121
+      aunq_58: -1333209710
+      aunq_59: 1724045372
+      aunq_6: -1163029321
+      aunq_60: -812283529
+      aunq_61: -217208162
+      aunq_62: -1350750771
+      aunq_63: -685248157
+      aunq_64: 901597183
+      aunq_65: -328391782
+      aunq_66: -1920169176
+      aunq_67: 140908401
+      aunq_68: -945055066
+      aunq_69: -170153307
+      aunq_7: 1494915080
+      aunq_70: 983175616
+      aunq_71: 2016721939
+      aunq_72: 1431459630
+      aunq_73: -127932220
+      aunq_74: 1677671960
+      aunq_75: 1402753874
+      aunq_76: -1003023192
+      aunq_77: 38879358
+      aunq_78: -559188307
+      aunq_79: -1220768281
+      aunq_8: -363550192
+      aunq_80: -538070844
+      aunq_81: 847378492
+      aunq_82: -1601419635
+      aunq_83: -478287044
+      aunq_84: -890152761
+      aunq_85: -272238668
+      aunq_86: -1433728371
+      aunq_87: -396673512
+      aunq_88: 1250153002
+      aunq_89: 1031479735
+      aunq_9: 716012163
+      aunq_90: 1365262061
+      aunq_91: -2141057402
+      aunq_92: -1143569003
+      aunq_93: -1650847877
+      aunq_94: -988749141
+      aunq_95: -900902808
+      aunq_96: 1638720959
+      aunq_97: 344637464
+      aunq_98: -1720042064
+      aunq_99: 1189101050
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
