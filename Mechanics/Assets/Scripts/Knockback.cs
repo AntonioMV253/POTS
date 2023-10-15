@@ -6,18 +6,7 @@ using UnityEngine;
 public class Knockback : MonoBehaviour
 {
     public float thrust;
-    public float knockTime;
-    void Start()
-    {
-
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public float knockTime; 
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -27,12 +16,13 @@ public class Knockback : MonoBehaviour
             Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
             if (enemy != null)
             {
-                enemy.isKinematic = false;
+                enemy.GetComponent<Enemy2>().currentState = EnemyState.stagger;
                 Vector2 difference = enemy.transform.position - transform.position;
                 difference = difference.normalized * thrust;
                 enemy.AddForce(difference, ForceMode2D.Impulse);
                 StartCoroutine(KnockCo(enemy));
-            }
+                Debug.Log("corotine");
+            } 
         }
     }
 
@@ -42,7 +32,7 @@ public class Knockback : MonoBehaviour
         {
             yield return new WaitForSeconds(knockTime);
             enemy.velocity = Vector2.zero;
-            enemy.isKinematic = true;
+            enemy.GetComponent<Enemy2>().currentState = EnemyState.idle;
         }
     }
 }

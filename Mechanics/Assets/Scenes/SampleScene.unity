@@ -103197,7 +103197,7 @@ GameObject:
   - component: {fileID: 2030969483}
   - component: {fileID: 2030969482}
   m_Layer: 0
-  m_Name: log_0
+  m_Name: log
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103232,7 +103232,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030969481}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -103242,7 +103242,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &2030969484
@@ -103283,14 +103283,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e27e630174dd244eb4ee4f04025def7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   health: 2
   enemyName: log enemy
   baseAttack: 1
-  moveSpeed: 0.5
+  moveSpeed: 1.5
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1
   homePosition: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!212 &2030969486
 SpriteRenderer:
   m_ObjectHideFlags: 0
