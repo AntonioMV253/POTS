@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Arrow
   - enemy
+  - breakable
   layers:
   - Default
   - TransparentFX

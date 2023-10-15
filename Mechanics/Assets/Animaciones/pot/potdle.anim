@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: logWalkRight
+  m_Name: potdle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 330168163, guid: 93b4a03ea02468442a72fa5e6b6da050, type: 3}
-    - time: 0.33333334
-      value: {fileID: 1422554781, guid: 93b4a03ea02468442a72fa5e6b6da050, type: 3}
-    - time: 0.6666667
-      value: {fileID: 207591164, guid: 93b4a03ea02468442a72fa5e6b6da050, type: 3}
-    - time: 1
-      value: {fileID: -1464035567, guid: 93b4a03ea02468442a72fa5e6b6da050, type: 3}
+      value: {fileID: -321650981, guid: 898b5ff74f590ec40ac63f6b7fa2e8d6, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,16 +40,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 330168163, guid: 93b4a03ea02468442a72fa5e6b6da050, type: 3}
-    - {fileID: 1422554781, guid: 93b4a03ea02468442a72fa5e6b6da050, type: 3}
-    - {fileID: 207591164, guid: 93b4a03ea02468442a72fa5e6b6da050, type: 3}
-    - {fileID: -1464035567, guid: 93b4a03ea02468442a72fa5e6b6da050, type: 3}
+    - {fileID: -321650981, guid: 898b5ff74f590ec40ac63f6b7fa2e8d6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.0166667
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
