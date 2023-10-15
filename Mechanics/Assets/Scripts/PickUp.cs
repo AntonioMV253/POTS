@@ -17,7 +17,7 @@ public class PickUp : MonoBehaviour
     private void Start()
     {
         inputManager = FindObjectOfType<InputManager>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent <SpriteRenderer>();
     }
 
     void Update()
@@ -64,7 +64,9 @@ public class PickUp : MonoBehaviour
             item.GetComponent<Rigidbody2D>().simulated = true;
 
         if (spriteRenderer && spriteRoto)
-            spriteRenderer.sprite = spriteRoto;
+        {
+            spriteRenderer.sprite = spriteRoto; // Establecer el sprite roto
+        }
 
         yield return new WaitForSeconds(0.1f);
 
