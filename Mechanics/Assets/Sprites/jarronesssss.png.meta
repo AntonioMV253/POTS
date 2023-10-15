@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: d6519e80d5f1057419621b1b6291beab
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jarronesssss_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 194
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61f522bc17e3c345b6003827fbc85e7
+      internalID: 233369039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jarronesssss_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 192
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a85eebdaf8a0d042bbff2890f63f079
+      internalID: -601192345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jarronesssss_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 192
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9258d53214d83428c13bc749276c36
+      internalID: -1437260918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      jarronesssss_0: 233369039
+      jarronesssss_1: -601192345
+      jarronesssss_10: 311563893
+      jarronesssss_100: 1254004226
+      jarronesssss_101: 933691425
+      jarronesssss_102: 2046083052
+      jarronesssss_103: -1826353882
+      jarronesssss_104: 1514273393
+      jarronesssss_105: -639668521
+      jarronesssss_106: -1527341002
+      jarronesssss_107: 885334116
+      jarronesssss_108: -1459702288
+      jarronesssss_109: -1001118589
+      jarronesssss_11: 605771438
+      jarronesssss_110: -1407314040
+      jarronesssss_111: 303062867
+      jarronesssss_112: 868753196
+      jarronesssss_113: 1193806898
+      jarronesssss_114: 921186016
+      jarronesssss_115: 377891847
+      jarronesssss_116: 481428697
+      jarronesssss_117: 2003429521
+      jarronesssss_118: 1011490628
+      jarronesssss_119: 1016665198
+      jarronesssss_12: -1943280520
+      jarronesssss_120: -1602325329
+      jarronesssss_121: 334508618
+      jarronesssss_122: -399438145
+      jarronesssss_123: -371577108
+      jarronesssss_124: -171557609
+      jarronesssss_125: -1059612341
+      jarronesssss_126: 1827297376
+      jarronesssss_127: -1551575454
+      jarronesssss_128: -2145300245
+      jarronesssss_129: 960045541
+      jarronesssss_13: -364579104
+      jarronesssss_130: 175773701
+      jarronesssss_131: -1923821955
+      jarronesssss_132: -18759972
+      jarronesssss_133: 924882023
+      jarronesssss_134: 2144024008
+      jarronesssss_135: 1203464959
+      jarronesssss_136: -1211337872
+      jarronesssss_137: 2064635325
+      jarronesssss_138: 321504193
+      jarronesssss_139: 306124093
+      jarronesssss_14: 1328943910
+      jarronesssss_15: -762913476
+      jarronesssss_16: -2069501628
+      jarronesssss_17: 735865091
+      jarronesssss_18: -1720448776
+      jarronesssss_19: 47461238
+      jarronesssss_2: -1437260918
+      jarronesssss_20: -1462518634
+      jarronesssss_21: -823384374
+      jarronesssss_22: -302140899
+      jarronesssss_23: 608351749
+      jarronesssss_24: -389031829
+      jarronesssss_25: -1235977491
+      jarronesssss_26: -718652169
+      jarronesssss_27: 639190473
+      jarronesssss_28: -1114675157
+      jarronesssss_29: -23841196
+      jarronesssss_3: -2098444466
+      jarronesssss_30: 1347093740
+      jarronesssss_31: 183320028
+      jarronesssss_32: 675349422
+      jarronesssss_33: 11761057
+      jarronesssss_34: -290984608
+      jarronesssss_35: -2032902233
+      jarronesssss_36: 627627184
+      jarronesssss_37: -1066109895
+      jarronesssss_38: 1343548877
+      jarronesssss_39: -1966875622
+      jarronesssss_4: 1080082619
+      jarronesssss_40: 466119745
+      jarronesssss_41: -1295398318
+      jarronesssss_42: 630615063
+      jarronesssss_43: -1616097473
+      jarronesssss_44: 1199417100
+      jarronesssss_45: -696759549
+      jarronesssss_46: 2098544330
+      jarronesssss_47: 1127241137
+      jarronesssss_48: -1591803370
+      jarronesssss_49: -969189136
+      jarronesssss_5: -1516879222
+      jarronesssss_50: 1548860621
+      jarronesssss_51: 2132708785
+      jarronesssss_52: -425408716
+      jarronesssss_53: 422407895
+      jarronesssss_54: -1929482462
+      jarronesssss_55: 1587437388
+      jarronesssss_56: 1041858940
+      jarronesssss_57: 575772060
+      jarronesssss_58: 310445653
+      jarronesssss_59: 2038732784
+      jarronesssss_6: -103810275
+      jarronesssss_60: -1235146657
+      jarronesssss_61: 1077230503
+      jarronesssss_62: -1635226347
+      jarronesssss_63: 1014598172
+      jarronesssss_64: -51702805
+      jarronesssss_65: 1044717520
+      jarronesssss_66: 2040954005
+      jarronesssss_67: -1140076987
+      jarronesssss_68: 564296915
+      jarronesssss_69: 1438861253
+      jarronesssss_7: 903175513
+      jarronesssss_70: -1208145026
+      jarronesssss_71: 908692170
+      jarronesssss_72: -1965978483
+      jarronesssss_73: 1754436149
+      jarronesssss_74: 1868642865
+      jarronesssss_75: -207269975
+      jarronesssss_76: 104255566
+      jarronesssss_77: -1858075028
+      jarronesssss_78: 1765804192
+      jarronesssss_79: 929703587
+      jarronesssss_8: 1879070626
+      jarronesssss_80: 1113733727
+      jarronesssss_81: -68748816
+      jarronesssss_82: 1451741801
+      jarronesssss_83: 651545520
+      jarronesssss_84: 798283206
+      jarronesssss_85: -1976440914
+      jarronesssss_86: 1883361871
+      jarronesssss_87: -1975124157
+      jarronesssss_88: -1052867193
+      jarronesssss_89: 1084148210
+      jarronesssss_9: -1317435592
+      jarronesssss_90: 915698186
+      jarronesssss_91: -352899525
+      jarronesssss_92: 1984254520
+      jarronesssss_93: 1352981236
+      jarronesssss_94: -298089408
+      jarronesssss_95: -896567646
+      jarronesssss_96: 270642637
+      jarronesssss_97: 1159852703
+      jarronesssss_98: -355748483
+      jarronesssss_99: 255150441
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
