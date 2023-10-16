@@ -34,7 +34,7 @@
                 },
                 {
                     "name": "Selection",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "31ac540f-d164-4b92-b008-001ab837438a",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -92,6 +92,17 @@
                     "id": "de4dbdc0-8585-48ff-9832-c20149a6a50f",
                     "path": "<Gamepad>/buttonEast",
                     "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Selection",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e8b152a6-1f57-4d23-9285-e761202276f1",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Selection",
