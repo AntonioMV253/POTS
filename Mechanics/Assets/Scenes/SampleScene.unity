@@ -5455,7 +5455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
-  damage: 0
+  damage: 1
 --- !u!61 &207837683
 BoxCollider2D:
   m_ObjectHideFlags: 0

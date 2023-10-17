@@ -20,9 +20,9 @@ public class Knockback : MonoBehaviour
                 Vector2 difference = hit.transform.position - transform.position;
                 difference = difference.normalized * thrust;
                 hit.AddForce(difference, ForceMode2D.Impulse);
-                if (other.gameObject.CompareTag("enemy")){
+                if (other.gameObject.CompareTag("enemy") && other.isTrigger){
                     hit.GetComponent<Enemy2>().currentState = EnemyState.stagger;
-                    other.GetComponent<Enemy2>().Knock(hit, knockTime);
+                    other.GetComponent<Enemy2>().Knock(hit, knockTime, damage);
                 }
                 if (other.gameObject.CompareTag("Player"))
                 {

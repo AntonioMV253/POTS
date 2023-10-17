@@ -23,9 +23,18 @@ public class Enemy2 : MonoBehaviour
     {
         health = maxHealth.initialValue;
     }
-    public void Knock(Rigidbody2D myRigidbody, float knockTime)
+    private void TakeDamage(float damage)
+    {
+        health -= damage;
+        if(health <= 0)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+    public void Knock(Rigidbody2D myRigidbody, float knockTime, float damage)
     {
         StartCoroutine(KnockCo(myRigidbody, knockTime));
+        TakeDamage(damage);
     }
     private IEnumerator KnockCo(Rigidbody2D myRigidbody, float knockTime)
     {
