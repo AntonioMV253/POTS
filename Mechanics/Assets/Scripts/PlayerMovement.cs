@@ -6,7 +6,9 @@ public enum PlayerState
 {
     Walk,
     Run,
-    Attack
+    Attack,
+    Stagger,
+    idle
 }
 
 public class PlayerMovement : MonoBehaviour
@@ -111,9 +113,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnAction(InputValue input)
     {
-        if (input.isPressed && currentState != PlayerState.Attack)
+        if (input.isPressed && currentState != PlayerState.Attack && currentState != PlayerState.Stagger)
         {
             StartCoroutine(AttackCo());
+        }
+        else if (currentState == PlayerState.Walk || currentState == PlayerState.idle)
+        {
+            UpdateAnimationAndMove();
         }
     }
     public void Knock(float knockTime, float damage)
@@ -135,5 +141,27 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("Attacking", false);
         currentState = (inputManager.IsRunButtonHold) ? PlayerState.Run : PlayerState.Walk;
+    }
+    public void Knock(float knockTime)
+    {
+        IEnumerator KnockCo(float knockTime)
+        {
+            yield return new WaitForSeconds(knockTime);
+            myRigidbody.velocity = Vector2.zero;
+            currentState = PlayerState.idle;
+        }
+        StartCoroutine(KnockCo(knockTime));
+    }
+
+
+    private IEnumerator KnockCo(Rigidbody2D myRigidbody, float knockTime)
+    {
+        if (myRigidbody != null && currentState != PlayerState.Stagger)
+        {
+            yield return new WaitForSeconds(knockTime);
+            myRigidbody.velocity = Vector2.zero;
+            currentState = PlayerState.idle;
+            myRigidbody.velocity = Vector2.zero;
+        }
     }
 }

@@ -23,10 +23,18 @@ public class Enemy2 : MonoBehaviour
     {
         health = maxHealth.initialValue;
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Knock(Rigidbody2D myRigidbody, float knockTime)
     {
-        
+        StartCoroutine(KnockCo(myRigidbody, knockTime));
+    }
+    private IEnumerator KnockCo(Rigidbody2D myRigidbody, float knockTime)
+    {
+        if (myRigidbody != null)
+        {
+            yield return new WaitForSeconds(knockTime);
+            myRigidbody.velocity = Vector2.zero;
+            currentState = EnemyState.idle;
+            myRigidbody.velocity = Vector2.zero;
+        }
     }
 }
