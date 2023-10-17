@@ -18,14 +18,14 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     public PlayerState currentState;
     private InputManager inputManager;
-    private AudioSource audioSource; // Agrega un AudioSource
+    private AudioSource audioSource;
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
 
     public float Speed = 4;
     public float MaxSpeed = 8;
-    public AudioClip[] walkSounds; // Arreglo de sonidos de caminar
-    public AudioClip runSound; // Sonido de correr
+    public AudioClip[] walkSounds;
+    public AudioClip runSound;
     public float minPitch = 0.8f;
     public float maxPitch = 1.2f;
 
@@ -35,12 +35,11 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         inputManager = GetComponent<InputManager>();
-        audioSource = GetComponent<AudioSource>(); // Obtiene el AudioSource
+        audioSource = GetComponent <AudioSource>();
 
-        // Configura los valores iniciales del AudioSource
         audioSource.loop = false;
         audioSource.playOnAwake = false;
-        audioSource.volume = 0.5f; // Ajusta el volumen según lo necesites
+        audioSource.volume = 0.5f;
     }
 
     private void FixedUpdate()
@@ -78,12 +77,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void PlayRandomWalkSound()
     {
-        // Elige un sonido aleatorio de caminar
         AudioClip walkSound = walkSounds[Random.Range(0, walkSounds.Length)];
 
-        // Reproduce el sonido
         audioSource.clip = walkSound;
-        audioSource.pitch = Random.Range(minPitch, maxPitch); // Cambia el pitch aleatoriamente
+        audioSource.pitch = Random.Range(minPitch, maxPitch);
         audioSource.Play();
     }
 
@@ -99,10 +96,10 @@ public class PlayerMovement : MonoBehaviour
             currentState = PlayerState.Run;
             if (audioSource.isPlaying)
             {
-                audioSource.Stop(); // Detiene cualquier sonido de caminar en ejecución
+                audioSource.Stop();
             }
             audioSource.clip = runSound;
-            audioSource.pitch = 1.0f; // Restaura el pitch normal
+            audioSource.pitch = 1.0f;
             audioSource.Play();
         }
         else
@@ -122,13 +119,14 @@ public class PlayerMovement : MonoBehaviour
             UpdateAnimationAndMove();
         }
     }
+
     public void Knock(float knockTime, float damage)
     {
         currentHealth.initialValue -= damage;
         if (currentHealth.initialValue > 0)
         {
             playerHealthSignal.Raise();
-            //StartCoroutine(KnockCo(knockTime));
+            StartCoroutine(KnockCo(knockTime));
         }
     }
 
@@ -142,26 +140,14 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("Attacking", false);
         currentState = (inputManager.IsRunButtonHold) ? PlayerState.Run : PlayerState.Walk;
     }
-    public void Knock(float knockTime)
-    {
-        IEnumerator KnockCo(float knockTime)
-        {
-            yield return new WaitForSeconds(knockTime);
-            myRigidbody.velocity = Vector2.zero;
-            currentState = PlayerState.idle;
-        }
-        StartCoroutine(KnockCo(knockTime));
-    }
 
-
-    private IEnumerator KnockCo(Rigidbody2D myRigidbody, float knockTime)
+    private IEnumerator KnockCo(float knockTime)
     {
         if (myRigidbody != null && currentState != PlayerState.Stagger)
         {
             yield return new WaitForSeconds(knockTime);
             myRigidbody.velocity = Vector2.zero;
             currentState = PlayerState.idle;
-            myRigidbody.velocity = Vector2.zero;
         }
     }
 }
