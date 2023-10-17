@@ -5090,7 +5090,6 @@ GameObject:
   - component: {fileID: 207837673}
   - component: {fileID: 207837657}
   - component: {fileID: 207837680}
-  - component: {fileID: 207837682}
   - component: {fileID: 207837683}
   m_Layer: 6
   m_Name: Player
@@ -5441,21 +5440,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &207837682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207837656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d51ea3a58fddf974293acd0ee0916e9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.5
-  damage: 1
 --- !u!61 &207837683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5463,7 +5447,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207837656}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -16459,6 +16443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 732240286}
   - component: {fileID: 732240287}
+  - component: {fileID: 732240288}
   m_Layer: 6
   m_Name: down hitbox
   m_TagString: Untagged
@@ -16516,6 +16501,21 @@ PolygonCollider2D:
       - {x: -0.2517432, y: -0.40264288}
       - {x: 0.1188916, y: -0.4964211}
       - {x: 0.5056089, y: -0.20676571}
+--- !u!114 &732240288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732240285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51ea3a58fddf974293acd0ee0916e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.5
+  damage: 1
 --- !u!1 &737392945
 GameObject:
   m_ObjectHideFlags: 0
@@ -96951,6 +96951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1241028793}
   - component: {fileID: 1241028794}
+  - component: {fileID: 1241028795}
   m_Layer: 6
   m_Name: Up hitbox
   m_TagString: Untagged
@@ -97008,6 +97009,21 @@ PolygonCollider2D:
       - {x: 0.24840927, y: -0.0118981}
       - {x: 0.4002245, y: 0.24599184}
       - {x: 0.12267879, y: 0.4887581}
+--- !u!114 &1241028795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241028792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51ea3a58fddf974293acd0ee0916e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.5
+  damage: 1
 --- !u!1 &1243269915
 GameObject:
   m_ObjectHideFlags: 0
@@ -101964,6 +101980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345958938}
   - component: {fileID: 1345958939}
+  - component: {fileID: 1345958940}
   m_Layer: 6
   m_Name: Left hitbox
   m_TagString: Untagged
@@ -102021,6 +102038,21 @@ PolygonCollider2D:
       - {x: -0.52526355, y: 0.10532434}
       - {x: -0.45159516, y: -0.26197422}
       - {x: -0.20554638, y: -0.40995276}
+--- !u!114 &1345958940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345958937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51ea3a58fddf974293acd0ee0916e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.5
+  damage: 1
 --- !u!1 &1388801643
 GameObject:
   m_ObjectHideFlags: 0
@@ -103207,7 +103239,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030969481}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -114934,6 +114966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2115625221}
   - component: {fileID: 2115625222}
+  - component: {fileID: 2115625223}
   m_Layer: 6
   m_Name: Right hitbox
   m_TagString: Untagged
@@ -114992,6 +115025,21 @@ PolygonCollider2D:
       - {x: 0.52906835, y: 0.04016746}
       - {x: 0.54089296, y: 0.11313905}
       - {x: 0.16175853, y: 0.3871662}
+--- !u!114 &2115625223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115625220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51ea3a58fddf974293acd0ee0916e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.5
+  damage: 1
 --- !u!1 &2122818883
 GameObject:
   m_ObjectHideFlags: 0
