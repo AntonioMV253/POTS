@@ -36,6 +36,7 @@ public class log : Enemy2
                 myRigidbody.MovePosition(transform.position + change * moveSpeed * Time.deltaTime);
                 ChangeState(EnemyState.walk);
             }
+
         }
     }
     private void ChangeState(EnemyState newState)

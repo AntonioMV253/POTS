@@ -13,14 +13,15 @@ public enum EnemyState
 public class Enemy2 : MonoBehaviour
 {
     public EnemyState currentState;
-    public int health;
+    public FloatValue maxHealth;
+    public float health;
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        health = maxHealth.initialValue;
     }
 
     // Update is called once per frame
