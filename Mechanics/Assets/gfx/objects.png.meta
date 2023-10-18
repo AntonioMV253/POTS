@@ -1256,7 +1256,7 @@ TextureImporter:
         serializedVersion: 2
         x: 213
         y: 261
-        width: 20
+        width: 5
         height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3077,6 +3077,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: fuegito_3
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 261
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5400dede39909b44eb2e158c2e062a2d
+      internalID: 1338248742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nada
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 261
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96705618a7746c14cb8636a24be73e11
+      internalID: -150384537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -3088,6 +3130,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      fuegito_3: 1338248742
+      nada: -150384537
       objects_0: 883505282
       objects_1: -496644397
       objects_10: -61937273

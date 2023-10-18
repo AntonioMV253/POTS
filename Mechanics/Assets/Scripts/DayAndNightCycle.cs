@@ -7,74 +7,125 @@ public class DayAndNightCycle : MonoBehaviour
 {
     [SerializeField] private Gradient lightColor;
     [SerializeField] public GameObject light;
-    [SerializeField] private ParticleSystem rainDrops; // Referencia al sistema de partículas
+    [SerializeField] private ParticleSystem rainDrops;
+
+    [SerializeField] private AudioClip rainSoundClip;
+    [SerializeField] private float rainSoundVolume = 1.0f;
+    [SerializeField] private float rainSoundPitch = 1.0f;
 
     private int days;
     public int Days => days;
 
     private float time = 50;
+    private float nextRainChangeTime;
+    private bool isRaining = false;
+    private bool isSoundPlaying = false;
 
-    private bool canChangeDay = true;
+    private bool dayChangedFlag = false; // Variable para controlar si el día ya ha sido registrado
 
     public delegate void OnDayChanged();
 
     public OnDayChanged DayChanged;
 
-    // Tiempo aleatorio para ocultar/mostrar el sistema de partículas
-    private float randomParticleToggleTime = 0f;
-    private float particleToggleInterval = 10f; // Intervalo de tiempo para cambiar las partículas (en segundos)
+    private AudioSource rainSound;
 
     private void Start()
     {
-        // Inicialmente, mostramos el sistema de partículas
-        ShowRainDrops();
+        InitializeRainSound();
+        UpdateRainState();
+        PlayRainSound();
     }
 
     private void Update()
     {
-        if (time > 500)
+        if (time > 70)
         {
             time = 0;
         }
-        if ((int)time == 250 && canChangeDay)
+        if ((int)time >= 60)
         {
-            canChangeDay = false;
-            DayChanged();
-            days++;
+            if (!dayChangedFlag) // Verificar si el día ya ha sido registrado
+            {
+                DayChanged?.Invoke();
+                days++;
+                dayChangedFlag = true; // Establecer la bandera de día registrado
+
+                // Añade la lógica de 40% de probabilidad de lluvia en el siguiente día
+                if (Random.Range(0f, 1f) < 0.4f)
+                {
+                    isRaining = true;
+                    ShowRainDrops();
+                    PlayRainSound();
+                }
+                else
+                {
+                    isRaining = false;
+                    HideRainDrops();
+                    StopRainSound();
+                }
+            }
         }
-        if ((int)time == 255)
-            canChangeDay = true;
+        else
+        {
+            dayChangedFlag = false; // Reiniciar la bandera cuando no se cumple la condición
+        }
         time += Time.deltaTime;
         light.GetComponent<Light2D>().color = lightColor.Evaluate(time * 0.002f);
+    }
 
-        // Actualizar el temporizador para ocultar/mostrar partículas
-        randomParticleToggleTime += Time.deltaTime;
-        if (randomParticleToggleTime >= particleToggleInterval)
+    private void InitializeRainSound()
+    {
+        rainSound = gameObject.AddComponent<AudioSource>();
+        rainSound.clip = rainSoundClip;
+        rainSound.volume = rainSoundVolume;
+        rainSound.pitch = rainSoundPitch;
+        rainSound.loop = true;
+    }
+
+    private void PlayRainSound()
+    {
+        if (rainSound != null && isRaining && !rainSound.isPlaying)
         {
-            // Cambiar el estado de las partículas aleatoriamente
-            if (Random.value < 0.5f)
+            isSoundPlaying = true;
+            rainSound.Play();
+        }
+    }
+
+    private void StopRainSound()
+    {
+        if (rainSound != null && (!isRaining || !rainSound.isPlaying))
+        {
+            isSoundPlaying = false;
+            rainSound.Stop();
+        }
+    }
+
+    private void UpdateRainState()
+    {
+        if (Time.time >= nextRainChangeTime)
+        {
+            isRaining = Random.Range(0f, 1f) < 0.9f;
+            if (isRaining)
             {
                 ShowRainDrops();
+                PlayRainSound();
             }
             else
             {
                 HideRainDrops();
+                StopRainSound();
             }
-
-            // Reiniciar el temporizador aleatorio
-            randomParticleToggleTime = 0f;
+            nextRainChangeTime = Time.time + Random.Range(60f, 120f);
         }
     }
 
-    // Función para mostrar las partículas
     private void ShowRainDrops()
     {
-        rainDrops.Play(); // Iniciar el sistema de partículas
+        rainDrops.Play();
     }
 
-    // Función para ocultar las partículas
     private void HideRainDrops()
     {
-        rainDrops.Stop(); // Detener el sistema de partículas
+        rainDrops.Stop();
     }
 }

@@ -7,17 +7,15 @@ public class PickUp : MonoBehaviour
 {
     public Transform holdSpot;
     public LayerMask pickUpMask;
-    public Sprite spriteRoto;
+    public GameObject destroyEffectPrefab;
     public Vector3 Direction { get; set; }
     private GameObject itemHolding;
-    private SpriteRenderer spriteRenderer;
     private InputManager inputManager;
     private bool isHoldingItem = false;
 
     private void Start()
     {
         inputManager = FindObjectOfType<InputManager>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -44,6 +42,19 @@ public class PickUp : MonoBehaviour
             if (itemHolding)
             {
                 StartCoroutine(ThrowItem(itemHolding));
+                itemHolding = null;
+            }
+        }
+
+        if (inputManager.IsActionButtonHold)
+        {
+            if (itemHolding)
+            {
+                itemHolding.transform.position = transform.position + Direction;
+                itemHolding.transform.parent = null;
+                if (itemHolding.GetComponent<Rigidbody2D>())
+                    itemHolding.GetComponent<Rigidbody2D>().simulated = true;
+                itemHolding = null;
             }
         }
     }
@@ -51,26 +62,25 @@ public class PickUp : MonoBehaviour
     IEnumerator ThrowItem(GameObject item)
     {
         Vector3 startPoint = item.transform.position;
-        Vector3 endPoint = transform.position + Direction * 10;
+        Vector3 endPoint = transform.position + Direction * 2;
         item.transform.parent = null;
 
-        for (float t = 0; t < 1; t += Time.deltaTime * 2)
+        for (int i = 0; i < 25; i++)
         {
-            item.transform.position = Vector3.Lerp(startPoint, endPoint, t);
+            item.transform.position = Vector3.Lerp(startPoint, endPoint, i * 0.04f);
             yield return null;
         }
 
-        if (item && item.GetComponent<Rigidbody2D>())
+        if (item.GetComponent<Rigidbody2D>())
             item.GetComponent<Rigidbody2D>().simulated = true;
 
-        if (spriteRenderer && spriteRoto)
-            spriteRenderer.sprite = spriteRoto;
+        // Instantiate the destroy effect
+        GameObject destroyEffectInstance = Instantiate(destroyEffectPrefab, item.transform.position, Quaternion.identity);
+        Destroy(destroyEffectInstance, 2.0f); // Destroy the effect after 2 seconds
 
-        yield return new WaitForSeconds(0.1f);
-
-        if (item)
-            Destroy(item);
-
+        Destroy(item); // Destroy the item
         isHoldingItem = false;
     }
+
 }
+
