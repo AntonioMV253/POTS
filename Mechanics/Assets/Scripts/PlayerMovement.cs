@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private InputManager inputManager;
     private AudioSource audioSource;
     public FloatValue currentHealth;
-    public Signal playerHealthSignal;
+    public SignalSender playerHealthSignal;
 
     public float Speed = 4;
     public float MaxSpeed = 8;
@@ -122,11 +122,15 @@ public class PlayerMovement : MonoBehaviour
 
     public void Knock(float knockTime, float damage)
     {
-        currentHealth.initialValue -= damage;
-        if (currentHealth.initialValue > 0)
+        currentHealth.RuntimeValue -= damage;
+        playerHealthSignal.Raise();
+        if (currentHealth.RuntimeValue > 0)
         {
-            playerHealthSignal.Raise();
             StartCoroutine(KnockCo(knockTime));
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
         }
     }
 
