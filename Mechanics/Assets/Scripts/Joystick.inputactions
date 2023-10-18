@@ -34,7 +34,7 @@
                 },
                 {
                     "name": "Selection",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "31ac540f-d164-4b92-b008-001ab837438a",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -69,6 +69,17 @@
                     "name": "",
                     "id": "4a8b416a-ced1-4346-bebd-659328d37a8d",
                     "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eabb6b4d-3e9f-45ba-b37d-5eb82fc15742",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -232,30 +243,8 @@
                 },
                 {
                     "name": "",
-                    "id": "c041cc4c-7db1-41d8-b400-155f78c31d45",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "cfe054e7-c652-48f7-a4c1-dacd83e1bf5a",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "15234d7f-7043-4229-aee0-659692f17a68",
-                    "path": "<Touchscreen>/primaryTouch/tap",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
