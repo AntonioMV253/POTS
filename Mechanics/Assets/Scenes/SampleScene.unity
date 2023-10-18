@@ -5278,7 +5278,7 @@ MonoBehaviour:
   pickUpMask:
     serializedVersion: 2
     m_Bits: 8
-  spriteRoto: {fileID: 0}
+  destroyEffectPrefab: {fileID: 0}
 --- !u!114 &207837673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102910,6 +102910,9 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   light: {fileID: 1975822354}
   rainDrops: {fileID: 123401950}
+  rainSoundClip: {fileID: 0}
+  rainSoundVolume: 1
+  rainSoundPitch: 1
 --- !u!114 &1975822356
 MonoBehaviour:
   m_ObjectHideFlags: 0
