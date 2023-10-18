@@ -8,7 +8,7 @@ public enum PlayerState
     Run,
     Attack,
     Stagger,
-    idle
+    Idle
 }
 
 public class PlayerMovement : MonoBehaviour
@@ -29,13 +29,16 @@ public class PlayerMovement : MonoBehaviour
     public float minPitch = 0.8f;
     public float maxPitch = 1.2f;
 
+    private float staggerTime = 1.0f; // Tiempo de aturdimiento después de recibir daño
+    private bool isStaggered = false;
+
     private void Awake()
     {
         currentState = PlayerState.Walk;
         myRigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         inputManager = GetComponent<InputManager>();
-        audioSource = GetComponent <AudioSource>();
+        audioSource = GetComponent<AudioSource>();
 
         audioSource.loop = false;
         audioSource.playOnAwake = false;
@@ -44,6 +47,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (isStaggered)
+        {
+            // El jugador está aturdido, no puede moverse
+            return;
+        }
+
         float currentSpeed = (currentState == PlayerState.Run) ? MaxSpeed : Speed;
 
         Vector2 moveDirection = moveInput.normalized;
@@ -110,11 +119,17 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnAction(InputValue input)
     {
+        if (isStaggered)
+        {
+            // El jugador está aturdido, no puede atacar
+            return;
+        }
+
         if (input.isPressed && currentState != PlayerState.Attack && currentState != PlayerState.Stagger)
         {
             StartCoroutine(AttackCo());
         }
-        else if (currentState == PlayerState.Walk || currentState == PlayerState.idle)
+        else if (currentState == PlayerState.Walk || currentState == PlayerState.Idle)
         {
             UpdateAnimationAndMove();
         }
@@ -122,8 +137,15 @@ public class PlayerMovement : MonoBehaviour
 
     public void Knock(float knockTime, float damage)
     {
+        if (isStaggered)
+        {
+            // El jugador ya está aturdido, no recibe daño adicional
+            return;
+        }
+
         currentHealth.RuntimeValue -= damage;
         playerHealthSignal.Raise();
+
         if (currentHealth.RuntimeValue > 0)
         {
             StartCoroutine(KnockCo(knockTime));
@@ -134,8 +156,27 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private IEnumerator KnockCo(float knockTime)
+    {
+        if (myRigidbody != null)
+        {
+            isStaggered = true;
+            currentState = PlayerState.Stagger;
+            myRigidbody.velocity = Vector2.zero;
+            yield return new WaitForSeconds(knockTime);
+            isStaggered = false;
+            currentState = PlayerState.Walk;
+        }
+    }
+
     private IEnumerator AttackCo()
     {
+        if (isStaggered)
+        {
+            // El jugador está aturdido, no puede atacar
+            yield break;
+        }
+
         currentState = PlayerState.Attack;
         animator.SetBool("Attacking", true);
 
@@ -143,15 +184,5 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("Attacking", false);
         currentState = (inputManager.IsRunButtonHold) ? PlayerState.Run : PlayerState.Walk;
-    }
-
-    private IEnumerator KnockCo(float knockTime)
-    {
-        if (myRigidbody != null && currentState != PlayerState.Stagger)
-        {
-            yield return new WaitForSeconds(knockTime);
-            myRigidbody.velocity = Vector2.zero;
-            currentState = PlayerState.idle;
-        }
     }
 }
