@@ -102910,7 +102910,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   light: {fileID: 1975822354}
   rainDrops: {fileID: 123401950}
-  rainSoundClip: {fileID: 0}
+  rainSoundClip: {fileID: 8300000, guid: e21fb312ace7f7d4c93de5900c0b8ba4, type: 3}
   rainSoundVolume: 1
   rainSoundPitch: 1
 --- !u!114 &1975822356
