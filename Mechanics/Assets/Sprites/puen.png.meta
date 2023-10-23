@@ -6186,69 +6186,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puen_787
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f2d26dfacc3b3640b966233267c47c2
-      internalID: 1105075532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puen_788
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4490c52887714a24a8ce86778bc00573
-      internalID: 97279398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puen_789
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3735a4eed02a5344e91bbcb24c6e8aa0
-      internalID: 1881040728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: puen_811
       rect:
         serializedVersion: 2
@@ -6381,7 +6318,7 @@ TextureImporter:
         x: 208
         y: 16
         width: 16
-        height: 16
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6399,10 +6336,10 @@ TextureImporter:
       name: puen_818
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 16
-        width: 16
-        height: 16
+        width: 28
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6412,27 +6349,6 @@ TextureImporter:
       bones: []
       spriteID: 36be92d4a2b869347b2eb565ceaa4031
       internalID: 139463690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puen_819
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 704961bafe8ee1249aa35389a29045ce
-      internalID: 1895268611
       vertices: []
       indices: 
       edges: []
