@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,14 +11,23 @@ public class PickUp : MonoBehaviour
     private GameObject itemHolding;
     private InputManager inputManager;
     private bool isHoldingItem = false;
+    public bool isUsingBow = false;
+
+    public SpriteRenderer bowSpriteRenderer;
 
     private void Start()
     {
         inputManager = FindObjectOfType<InputManager>();
+        if (!bowSpriteRenderer)
+        {
+            Debug.LogWarning("No se ha asignado el SpriteRenderer del arco.");
+        }
     }
 
     void Update()
     {
+        if (isUsingBow) return;
+
         if (inputManager.IsSelectionButtonHold)
         {
             if (!isHoldingItem)
@@ -34,6 +42,9 @@ public class PickUp : MonoBehaviour
                         itemHolding.GetComponent<Rigidbody2D>().simulated = false;
 
                     isHoldingItem = true;
+
+                    if (bowSpriteRenderer)
+                        bowSpriteRenderer.enabled = false;
                 }
             }
         }
@@ -43,6 +54,9 @@ public class PickUp : MonoBehaviour
             {
                 StartCoroutine(ThrowItem(itemHolding));
                 itemHolding = null;
+
+                if (bowSpriteRenderer)
+                    bowSpriteRenderer.enabled = true;
             }
         }
 
@@ -61,26 +75,18 @@ public class PickUp : MonoBehaviour
 
     IEnumerator ThrowItem(GameObject item)
     {
-        Vector3 startPoint = item.transform.position;
-        Vector3 endPoint = transform.position + Direction * 2;
         item.transform.parent = null;
-
-        for (int i = 0; i < 25; i++)
+        Rigidbody2D rb = item.GetComponent<Rigidbody2D>();
+        if (rb)
         {
-            item.transform.position = Vector3.Lerp(startPoint, endPoint, i * 0.04f);
-            yield return null;
+            rb.simulated = true;
+            rb.AddForce(Direction * 200f, ForceMode2D.Impulse);
         }
 
-        if (item.GetComponent<Rigidbody2D>())
-            item.GetComponent<Rigidbody2D>().simulated = true;
-
-        // Instantiate the destroy effect
+        yield return new WaitForSeconds(2f);
         GameObject destroyEffectInstance = Instantiate(destroyEffectPrefab, item.transform.position, Quaternion.identity);
-        Destroy(destroyEffectInstance, 2.0f); // Destroy the effect after 2 seconds
-
-        Destroy(item); // Destroy the item
+        Destroy(destroyEffectInstance, 2.0f);
+        Destroy(item);
         isHoldingItem = false;
     }
-
 }
-

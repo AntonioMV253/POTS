@@ -2,24 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Moneda : MonoBehaviour
+public class Bomba : MonoBehaviour
 {
-    public delegate void SumaMoneda(int moneda);
-    public static event SumaMoneda sumaMoneda;
+    public delegate void SumaBomba(int cantidadBombas);
+    public static event SumaBomba sumaBomba;
 
-    [SerializeField] private int cantidadMonedas;
+    [SerializeField] private int cantidadBombas = 1;
     [SerializeField] private AudioClip soundClip;
 
-    // Dentro de Moneda:
+    // Dentro de Bomba:
     private bool hasBeenCollected = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!hasBeenCollected && collision.gameObject.CompareTag("Player"))
         {
-            if (sumaMoneda != null)
+            if (sumaBomba != null)
             {
-                SumarMoneda();
+                SumarBomba();
                 hasBeenCollected = true;
                 Destroy(this.gameObject);
             }
@@ -27,13 +27,13 @@ public class Moneda : MonoBehaviour
     }
 
 
-    private void SumarMoneda()
+    private void SumarBomba()
     {
         if (soundClip != null)
         {
             AudioSource.PlayClipAtPoint(soundClip, transform.position);
-
-            sumaMoneda?.Invoke(cantidadMonedas);
         }
+
+        sumaBomba?.Invoke(cantidadBombas);
     }
 }
