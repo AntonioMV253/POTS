@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D myRigidbody;
     private Animator animator;
-    private Vector2 moveInput;
+    public Vector2 moveInput;
     public PlayerState currentState;
     private InputManager inputManager;
     private AudioSource audioSource;
@@ -121,7 +121,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isStaggered)
         {
-            // El jugador está aturdido, no puede atacar
             return;
         }
 

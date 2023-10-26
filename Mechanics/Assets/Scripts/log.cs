@@ -10,6 +10,7 @@ public class log : Enemy2
     public float attackRadius;
     public Transform homePosition;
     public Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,6 @@ public class log : Enemy2
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
-        
     }
 
     // Update is called once per frame
@@ -36,15 +36,22 @@ public class log : Enemy2
                 myRigidbody.MovePosition(transform.position + change * moveSpeed * Time.deltaTime);
                 ChangeState(EnemyState.walk);
             }
-
         }
     }
+
     private void ChangeState(EnemyState newState)
     {
-        if(currentState != newState)
+        if (currentState != newState)
         {
             currentState = newState;
         }
     }
-    
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Arrow"))
+        {
+            Knock(myRigidbody, 1f, 1f);
+        }
+    }
 }

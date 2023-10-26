@@ -7,7 +7,6 @@ public class UIManager : MonoBehaviour
 {
     private int totalMonedas;
     [SerializeField] private TMP_Text textoMonedas;
-    [SerializeField] private List<GameObject> listaCorazones;
     [SerializeField] private Sprite corazonDesactivado;
     private void Start()
     {
@@ -19,9 +18,4 @@ public class UIManager : MonoBehaviour
         textoMonedas.text = totalMonedas.ToString();
     }
 
-    public void RestaCorazones (int indice)
-    {
-        Image imagenCorazon = listaCorazones[indice].GetComponent<Image>();
-        imagenCorazon.sprite = corazonDesactivado;
-    }
 }
