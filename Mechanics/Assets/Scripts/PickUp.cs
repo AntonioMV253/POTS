@@ -1,11 +1,17 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
+
 public class PickUp : MonoBehaviour
 {
     public Transform holdSpot;
     public LayerMask pickUpMask;
     public GameObject destroyEffectPrefab;
+
+    // Referencias a los prefabs
+    public GameObject heartPrefab;
+    public GameObject coinPrefab;
+    public GameObject bombPrefab;
+
     private GameObject itemHolding;
     private InputManager inputManager;
     private bool isHoldingItem = false;
@@ -14,7 +20,7 @@ public class PickUp : MonoBehaviour
     public SpriteRenderer bowSpriteRenderer;
 
     private bool canThrow = true; // Permite lanzar solo si se ha recogido un objeto
-    private Vector3 lastMoveInputDirection; // Almacena la última dirección de movimiento válida
+    private Vector3 lastMoveInputDirection; // Almacena la última dirección de movimiento
 
     private void Start()
     {
@@ -27,9 +33,10 @@ public class PickUp : MonoBehaviour
 
     void Update()
     {
-        if (inputManager.MoveInput != Vector2.zero) // Si el jugador está moviéndose
+        // Actualiza la dirección de movimiento constantemente
+        if (inputManager.MoveInput != Vector2.zero)
         {
-            lastMoveInputDirection = inputManager.MoveInput.normalized;
+            lastMoveInputDirection = new Vector3(inputManager.MoveInput.x, inputManager.MoveInput.y).normalized;
         }
 
         if (inputManager.IsSelectionButtonHold && !isHoldingItem)
@@ -65,9 +72,8 @@ public class PickUp : MonoBehaviour
                 {
                     rb.simulated = true;
 
-                    // Calcula la dirección de lanzamiento basada en la última dirección de movimiento válida
+                    // Calcula la dirección de lanzamiento basada en la última dirección de movimiento
                     Vector3 throwDirection = lastMoveInputDirection * throwForce;
-
                     rb.velocity = throwDirection;
                 }
 
@@ -90,7 +96,29 @@ public class PickUp : MonoBehaviour
             Destroy(destroyEffectInstance, 2.0f);
         }
 
+        // Lógica para dropear uno de los tres objetos
+        DropRandomItem(item.transform.position);
+
         Destroy(item);
         isHoldingItem = false;
+    }
+
+    // Función que decide qué objeto "dropear" basado en porcentajes
+    void DropRandomItem(Vector3 position)
+    {
+        float randomValue = Random.value; // Devuelve un valor entre 0 y 1
+
+        if (randomValue <= 0.4f) // 40% de posibilidad
+        {
+            Instantiate(heartPrefab, position, Quaternion.identity);
+        }
+        else if (randomValue <= 0.8f) // 40% de posibilidad
+        {
+            Instantiate(coinPrefab, position, Quaternion.identity);
+        }
+        else // 20% de posibilidad
+        {
+            Instantiate(bombPrefab, position, Quaternion.identity);
+        }
     }
 }
