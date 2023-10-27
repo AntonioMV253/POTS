@@ -490,6 +490,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   destroyEffectPrefab: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
+  heartPrefab: {fileID: 0}
+  coinPrefab: {fileID: 0}
+  bombPrefab: {fileID: 0}
   throwForce: 10
   bowSpriteRenderer: {fileID: 1027852702}
 --- !u!114 &131152396
@@ -533,12 +536,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowPrefab: {fileID: 4301140955662101467, guid: ee94e4d89776d7d45916d6e0d1c07191, type: 3}
   arrowGFX: {fileID: 1027852704}
-  bowPowerSlider: {fileID: 0}
   bow: {fileID: 1027852703}
   arrowSpawnPoint: {fileID: 1027852703}
   bowPower: 10
-  maxBowCharge: 0
-  minBowChargeToFire: 0
 --- !u!114 &131152398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1159,6 +1159,10 @@ MonoBehaviour:
   thrust: 1
   knockTime: 0.5
   damage: 1
+  leftHitbox: {fileID: 0}
+  rightHitbox: {fileID: 0}
+  downHitbox: {fileID: 0}
+  upHitbox: {fileID: 0}
 --- !u!60 &514826392
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1381,7 +1385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438a5fe3b3a5dd54e9accc6c810e8d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Sample Scene
+  sceneToLoad: SampleScene
   PlayerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
 --- !u!1 &637531807
@@ -21688,6 +21692,10 @@ MonoBehaviour:
   thrust: 1
   knockTime: 0.5
   damage: 1
+  leftHitbox: {fileID: 0}
+  rightHitbox: {fileID: 0}
+  downHitbox: {fileID: 0}
+  upHitbox: {fileID: 0}
 --- !u!60 &897940521
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21939,6 +21947,10 @@ MonoBehaviour:
   thrust: 1
   knockTime: 0.5
   damage: 1
+  leftHitbox: {fileID: 0}
+  rightHitbox: {fileID: 0}
+  downHitbox: {fileID: 0}
+  upHitbox: {fileID: 0}
 --- !u!60 &998926742
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -22099,6 +22111,10 @@ MonoBehaviour:
   thrust: 1
   knockTime: 0.5
   damage: 1
+  leftHitbox: {fileID: 0}
+  rightHitbox: {fileID: 0}
+  downHitbox: {fileID: 0}
+  upHitbox: {fileID: 0}
 --- !u!60 &1121467324
 PolygonCollider2D:
   m_ObjectHideFlags: 0
