@@ -1,23 +1,23 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PickUp : MonoBehaviour
 {
     public Transform holdSpot;
     public LayerMask pickUpMask;
     public GameObject destroyEffectPrefab;
-    public Vector3 Direction { get; set; }
     private GameObject itemHolding;
     private InputManager inputManager;
     private bool isHoldingItem = false;
-    public bool isUsingBow = false;
+    public float throwForce = 10f;
 
     public SpriteRenderer bowSpriteRenderer;
 
+    private bool canThrow = true; // Permite lanzar solo si se ha recogido un objeto
+
     private void Start()
     {
-        inputManager = FindObjectOfType<InputManager>();
+        inputManager = GetComponent<InputManager>();
         if (!bowSpriteRenderer)
         {
             Debug.LogWarning("No se ha asignado el SpriteRenderer del arco.");
@@ -26,66 +26,80 @@ public class PickUp : MonoBehaviour
 
     void Update()
     {
-        if (isUsingBow) return;
-
-        if (inputManager.IsSelectionButtonHold)
+        if (inputManager.IsSelectionButtonHold && !isHoldingItem)
         {
-            if (!isHoldingItem)
+            Collider2D pickUpItem = Physics2D.OverlapCircle(transform.position, 0.4f, pickUpMask);
+            if (pickUpItem)
             {
-                Collider2D pickUpItem = Physics2D.OverlapCircle(transform.position + Direction, .4f, pickUpMask);
-                if (pickUpItem)
-                {
-                    itemHolding = pickUpItem.gameObject;
-                    itemHolding.transform.position = holdSpot.position;
-                    itemHolding.transform.parent = transform;
-                    if (itemHolding.GetComponent<Rigidbody2D>())
-                        itemHolding.GetComponent<Rigidbody2D>().simulated = false;
+                itemHolding = pickUpItem.gameObject;
+                itemHolding.transform.position = holdSpot.position;
+                itemHolding.transform.parent = holdSpot;
+                Rigidbody2D rb = itemHolding.GetComponent<Rigidbody2D>();
 
-                    isHoldingItem = true;
+                if (rb)
+                    rb.simulated = false;
 
-                    if (bowSpriteRenderer)
-                        bowSpriteRenderer.enabled = false;
-                }
+                isHoldingItem = true;
+                canThrow = true; // El jugador puede lanzar el objeto
+
+                if (bowSpriteRenderer)
+                    bowSpriteRenderer.enabled = false;
             }
         }
-        else if (isHoldingItem && inputManager.IsRunButtonHold)
+        else if (isHoldingItem && canThrow && inputManager.IsRunButtonHold)
         {
+            canThrow = false; // Evita que el jugador lance el objeto mientras sostiene el botón Run
+
             if (itemHolding)
             {
-                StartCoroutine(ThrowItem(itemHolding));
+                itemHolding.transform.parent = null;
+                Rigidbody2D rb = itemHolding.GetComponent<Rigidbody2D>();
+
+                if (rb)
+                {
+                    rb.simulated = true;
+
+                    // Calcula la dirección de lanzamiento basada en la rotación del jugador
+                    Vector3 playerDirection = Vector3.up; // Inicialmente, asumimos que el jugador mira hacia arriba
+
+                    // Cambia la dirección en función de la entrada del jugador
+                    if (inputManager.MoveInput.x > 0)
+                    {
+                        playerDirection = Vector3.right;
+                    }
+                    else if (inputManager.MoveInput.x < 0)
+                    {
+                        playerDirection = Vector3.left;
+                    }
+                    else if (inputManager.MoveInput.y < 0)
+                    {
+                        playerDirection = Vector3.down;
+                    }
+
+                    Vector3 throwDirection = playerDirection.normalized * throwForce;
+
+                    rb.velocity = throwDirection;
+                }
+
+                StartCoroutine(DestroyItem(itemHolding));
                 itemHolding = null;
 
                 if (bowSpriteRenderer)
                     bowSpriteRenderer.enabled = true;
             }
         }
-
-        if (inputManager.IsActionButtonHold)
-        {
-            if (itemHolding)
-            {
-                itemHolding.transform.position = transform.position + Direction;
-                itemHolding.transform.parent = null;
-                if (itemHolding.GetComponent<Rigidbody2D>())
-                    itemHolding.GetComponent<Rigidbody2D>().simulated = true;
-                itemHolding = null;
-            }
-        }
     }
 
-    IEnumerator ThrowItem(GameObject item)
+    IEnumerator DestroyItem(GameObject item)
     {
-        item.transform.parent = null;
-        Rigidbody2D rb = item.GetComponent<Rigidbody2D>();
-        if (rb)
+        yield return new WaitForSeconds(2f);
+
+        if (destroyEffectPrefab)
         {
-            rb.simulated = true;
-            rb.AddForce(Direction * 200f, ForceMode2D.Impulse);
+            GameObject destroyEffectInstance = Instantiate(destroyEffectPrefab, item.transform.position, Quaternion.identity);
+            Destroy(destroyEffectInstance, 2.0f);
         }
 
-        yield return new WaitForSeconds(2f);
-        GameObject destroyEffectInstance = Instantiate(destroyEffectPrefab, item.transform.position, Quaternion.identity);
-        Destroy(destroyEffectInstance, 2.0f);
         Destroy(item);
         isHoldingItem = false;
     }
