@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class PickUp : MonoBehaviour
 {
     public Transform holdSpot;
@@ -14,6 +14,7 @@ public class PickUp : MonoBehaviour
     public SpriteRenderer bowSpriteRenderer;
 
     private bool canThrow = true; // Permite lanzar solo si se ha recogido un objeto
+    private Vector3 lastMoveInputDirection; // Almacena la última dirección de movimiento válida
 
     private void Start()
     {
@@ -26,6 +27,11 @@ public class PickUp : MonoBehaviour
 
     void Update()
     {
+        if (inputManager.MoveInput != Vector2.zero) // Si el jugador está moviéndose
+        {
+            lastMoveInputDirection = inputManager.MoveInput.normalized;
+        }
+
         if (inputManager.IsSelectionButtonHold && !isHoldingItem)
         {
             Collider2D pickUpItem = Physics2D.OverlapCircle(transform.position, 0.4f, pickUpMask);
@@ -40,7 +46,7 @@ public class PickUp : MonoBehaviour
                     rb.simulated = false;
 
                 isHoldingItem = true;
-                canThrow = true; // El jugador puede lanzar el objeto
+                canThrow = true;
 
                 if (bowSpriteRenderer)
                     bowSpriteRenderer.enabled = false;
@@ -59,24 +65,8 @@ public class PickUp : MonoBehaviour
                 {
                     rb.simulated = true;
 
-                    // Calcula la dirección de lanzamiento basada en la rotación del jugador
-                    Vector3 playerDirection = Vector3.up; // Inicialmente, asumimos que el jugador mira hacia arriba
-
-                    // Cambia la dirección en función de la entrada del jugador
-                    if (inputManager.MoveInput.x > 0)
-                    {
-                        playerDirection = Vector3.right;
-                    }
-                    else if (inputManager.MoveInput.x < 0)
-                    {
-                        playerDirection = Vector3.left;
-                    }
-                    else if (inputManager.MoveInput.y < 0)
-                    {
-                        playerDirection = Vector3.down;
-                    }
-
-                    Vector3 throwDirection = playerDirection.normalized * throwForce;
+                    // Calcula la dirección de lanzamiento basada en la última dirección de movimiento válida
+                    Vector3 throwDirection = lastMoveInputDirection * throwForce;
 
                     rb.velocity = throwDirection;
                 }

@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     private AudioSource audioSource;
     public FloatValue currentHealth;
     public SignalSender playerHealthSignal;
+    public PickUp pickUpScript;
 
     public float Speed = 4;
     public float MaxSpeed = 8;

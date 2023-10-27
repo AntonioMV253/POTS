@@ -8,10 +8,18 @@ public class InputManager : MonoBehaviour
     public bool IsRunButtonHold;
     public bool IsActionButtonHold;
     public bool IsSelectionButtonHold;
+    public Vector2 TouchPosition;
+    public bool IsTouchPressed;
+
     public void OnMove(InputValue input)
     {
-        MoveInput = input.Get<Vector2>();
+        Vector2 newMoveInput = input.Get<Vector2>();
+        if (newMoveInput != Vector2.zero)
+        {
+            MoveInput = newMoveInput;
+        }
     }
+
 
     public void OnRun(InputValue input)
     {
@@ -28,10 +36,9 @@ public class InputManager : MonoBehaviour
         IsSelectionButtonHold = Convert.ToBoolean(input.Get<float>());
     }
 
-    // Agrega un nuevo método para manejar la acción "Touch"
     public void OnTouch(InputValue input)
     {
-        MoveInput = input.Get<Vector2>();
-        // Aquí puedes realizar cualquier lógica adicional con los valores de input obtenidos de la acción "Touch"
+        TouchPosition = input.Get<Vector2>();
+        IsTouchPressed = true;
     }
 }

@@ -7,9 +7,9 @@
             "actions": [
                 {
                     "name": "Move",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "32c513d3-007c-464c-8608-a9d7676347de",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -25,18 +25,18 @@
                 },
                 {
                     "name": "Action",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "c667318a-1380-4e02-ad89-a3a4cf187818",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
                     "name": "Selection",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "31ac540f-d164-4b92-b008-001ab837438a",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -78,20 +78,9 @@
                 },
                 {
                     "name": "",
-                    "id": "eabb6b4d-3e9f-45ba-b37d-5eb82fc15742",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Run",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "e8820ef4-4b8a-480e-bc47-437e6b4cf767",
                     "path": "<Gamepad>/buttonNorth",
-                    "interactions": "Press(behavior=2)",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Action",
@@ -102,7 +91,7 @@
                     "name": "",
                     "id": "de4dbdc0-8585-48ff-9832-c20149a6a50f",
                     "path": "<Gamepad>/buttonEast",
-                    "interactions": "Press(behavior=2)",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Selection",
@@ -315,8 +304,8 @@
                 },
                 {
                     "name": "",
-                    "id": "028d4114-6fbd-4db6-ae3e-966313c1c9b3",
-                    "path": "<Touchscreen>/touch*/press",
+                    "id": "2810ce2b-25e7-4b09-b378-b721cb733ef5",
+                    "path": "<XRController>/trigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -326,8 +315,8 @@
                 },
                 {
                     "name": "",
-                    "id": "2810ce2b-25e7-4b09-b378-b721cb733ef5",
-                    "path": "<XRController>/trigger",
+                    "id": "3dd0fb6a-16cb-44ce-a2bb-c481a5a196b2",
+                    "path": "<Touchscreen>/touch*/press",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
