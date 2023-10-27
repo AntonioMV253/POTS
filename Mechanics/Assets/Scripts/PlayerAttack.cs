@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] GameObject arrowPrefab;
     [SerializeField] SpriteRenderer arrowGFX;
-    [SerializeField] Slider bowPowerSlider;
     [SerializeField] Transform bow;
     [SerializeField] Transform arrowSpawnPoint;
     private PlayerMovement playerMovement; // Para detectar la dirección del jugador
@@ -16,22 +14,13 @@ public class PlayerAttack : MonoBehaviour
     [Range(0, 10)]
     [SerializeField] float bowPower;
 
-    [Range(0, 3)]
-    [SerializeField] float maxBowCharge;
-
-    [Range(0, 3)]
-    [SerializeField] float minBowChargeToFire = 0.5f;
-
-    float bowCharge;
+    float cooldown = 0f;
     bool canFire = true;
 
     private InputManager inputManager;
 
     private void Start()
     {
-        bowPowerSlider.value = 0f;
-        bowPowerSlider.maxValue = maxBowCharge;
-
         inputManager = FindObjectOfType<InputManager>();
         playerMovement = GetComponent<PlayerMovement>(); // Inicializamos playerMovement
     }
@@ -42,31 +31,23 @@ public class PlayerAttack : MonoBehaviour
 
         if (inputManager.IsActionButtonHold && canFire)
         {
-            ChargeBow();
-        }
-        else if (inputManager.IsSelectionButtonHold && canFire && bowCharge >= minBowChargeToFire)
-        {
             FireBow();
         }
         else
         {
-            if (bowCharge > 0f)
+            if (cooldown > 0f)
             {
-                bowCharge -= 1f * Time.deltaTime;
+                cooldown -= Time.deltaTime;
             }
             else
             {
-                bowCharge = 0f;
                 canFire = true;
             }
-
-            bowPowerSlider.value = bowCharge;
         }
     }
 
     void HandleBowPositionAndRotation()
     {
-        // Hacer que el arco mire en la dirección del movimiento del jugador
         if (playerMovement != null && playerMovement.moveInput != Vector2.zero)
         {
             Vector2 playerDirection = playerMovement.moveInput.normalized;
@@ -85,36 +66,20 @@ public class PlayerAttack : MonoBehaviour
 
         if (Mathf.Abs(playerDirection.x) > Mathf.Abs(playerDirection.y))
         {
-            yOffset = 0; // Priorizar movimiento horizontal
+            yOffset = 0; 
         }
         else
         {
-            xOffset = 0; // Priorizar movimiento vertical
+            xOffset = 0;
         }
 
         return new Vector3(xOffset, yOffset, 0);
     }
 
-    void ChargeBow()
-    {
-        arrowGFX.enabled = true;
-
-        bowCharge += Time.deltaTime;
-        bowPowerSlider.value = bowCharge;
-
-        if (bowCharge > maxBowCharge)
-        {
-            bowCharge = maxBowCharge;
-            bowPowerSlider.value = maxBowCharge;
-        }
-    }
-
     void FireBow()
     {
-        if (bowCharge > maxBowCharge) bowCharge = maxBowCharge;
-
-        float arrowSpeed = bowCharge + bowPower;
-        float arrowDamage = bowCharge * bowPower;
+        float arrowSpeed = bowPower;
+        float arrowDamage = bowPower;
 
         Quaternion playerRotation = bow.rotation;
         Quaternion rot = playerRotation * Quaternion.Euler(new Vector3(0f, 0f, -90f));
@@ -124,9 +89,7 @@ public class PlayerAttack : MonoBehaviour
         arrowScript.ArrowVelocity = arrowSpeed;
         arrowScript.ArrowDamage = arrowDamage;
 
-        bowCharge = 0f; // Restablece la carga después de disparar
-        bowPowerSlider.value = 0f;
         canFire = false;
-        arrowGFX.enabled = false;
+        cooldown = 1.5f; 
     }
 }

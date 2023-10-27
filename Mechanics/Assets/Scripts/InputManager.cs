@@ -16,7 +16,9 @@ public class InputManager : MonoBehaviour
         Vector2 newMoveInput = input.Get<Vector2>();
         if (newMoveInput != Vector2.zero)
         {
-            MoveInput = newMoveInput;
+            float newX = Mathf.Abs(newMoveInput.x) > Mathf.Abs(newMoveInput.y) ? Mathf.Sign(newMoveInput.x) : 0;
+            float newY = Mathf.Abs(newMoveInput.x) > Mathf.Abs(newMoveInput.y) ? 0 : Mathf.Sign(newMoveInput.y);
+            MoveInput = new Vector2(newX, newY);
         }
     }
 
@@ -41,4 +43,5 @@ public class InputManager : MonoBehaviour
         TouchPosition = input.Get<Vector2>();
         IsTouchPressed = true;
     }
+
 }
