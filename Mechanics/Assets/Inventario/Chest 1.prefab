@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3863583434648740225}
   - component: {fileID: 3863583434648740285}
   m_Layer: 0
-  m_Name: Chest
+  m_Name: Chest 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3863583434648740224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 34.19, y: 23.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55,7 +55,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1753205982242350755, guid: 61ed34b0dfd8f4a4cbf0c96062dbb370, type: 3}
+  m_Sprite: {fileID: 1753205982242350755, guid: b110a8d3d76ca1d478961f0f0fcac279, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.875, y: 0.875}
+  m_Size: {x: 0.9375, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -97,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 3863583434648740224}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e8249a5413427fe49a76d4745767fc73, type: 2}
+  m_Controller: {fileID: 9100000, guid: 28e522579d2af924ea9967d3aed4b1f1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -121,7 +121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 3863583434648740286}
-  coinPrefab: {fileID: 6157090278942312032, guid: 49446d3c60b394e4eb7ae3adb92f8c10, type: 3}
+  coinPrefab: {fileID: 7235115736842612325, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+  bombPrefab: {fileID: 1507065892080491875, guid: 414b5a65a8e08134697db91557ca8e9f, type: 3}
+  heartPrefab: {fileID: 6428485888212834659, guid: 87e8544ef5ebf124d8d6f365a7a3d3d8, type: 3}
   openTime: 2
   splitSpeed: 0.2
   spawn: 0
@@ -143,7 +145,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.875, y: 0.875}
-    newSize: {x: 0.875, y: 0.875}
+    newSize: {x: 0.9375, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

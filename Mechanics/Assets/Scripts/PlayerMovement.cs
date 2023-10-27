@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public FloatValue currentHealth;
     public SignalSender playerHealthSignal;
     public PickUp pickUpScript;
+    public VectorValue startingPosition;
 
     public float Speed = 4;
     public float MaxSpeed = 8;
