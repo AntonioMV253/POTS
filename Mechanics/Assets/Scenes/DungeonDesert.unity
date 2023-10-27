@@ -537,6 +537,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -631,6 +635,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -719,6 +727,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -813,6 +825,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -980,6 +996,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -1239,6 +1259,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -1327,6 +1351,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -1426,6 +1454,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -1609,6 +1641,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -1703,6 +1739,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -1791,6 +1831,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -1881,6 +1925,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -1969,6 +2017,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -2359,6 +2411,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -2532,6 +2588,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -2737,6 +2797,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -11457,6 +11521,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -11622,6 +11690,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -11786,6 +11858,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -12075,6 +12151,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -12251,6 +12331,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -12340,6 +12424,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -12428,6 +12516,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -12603,6 +12695,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -12871,6 +12967,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -12965,6 +13065,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -13053,6 +13157,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -13231,6 +13339,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -13319,6 +13431,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -13545,6 +13661,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -13634,6 +13754,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -13722,6 +13846,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -13949,6 +14077,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -14037,6 +14169,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -14198,6 +14334,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -14312,6 +14452,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -14401,6 +14545,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -14489,6 +14637,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -17615,6 +17767,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -17708,6 +17864,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -17807,6 +17967,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -18037,6 +18201,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -18131,6 +18299,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -18224,6 +18396,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -18324,6 +18500,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -18412,6 +18592,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -18664,6 +18848,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -18944,6 +19132,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   destroyEffectPrefab: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
+  heartPrefab: {fileID: 0}
+  coinPrefab: {fileID: 0}
+  bombPrefab: {fileID: 0}
   throwForce: 10
   bowSpriteRenderer: {fileID: 1162097438}
 --- !u!114 &1733286738
@@ -19163,6 +19354,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -19251,6 +19446,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -19341,6 +19540,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -19429,6 +19632,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -19604,6 +19811,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -19816,6 +20027,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -19905,6 +20120,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -19993,6 +20212,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
@@ -53733,6 +53956,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
       value: 10
@@ -74932,6 +75159,10 @@ PrefabInstance:
     - target: {fileID: 470465162470413153, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753376860591932783, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
+      propertyPath: settings.destroyTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3866008696928760754, guid: 76566ead849cdf5429e6662b2f0fb4af, type: 3}
       propertyPath: cantidadMonedas
