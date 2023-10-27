@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Village.unity
+    guid: a8b913ec409a8fd4bb58f5a1924b681a
+  - enabled: 1
+    path: Assets/Scenes/Snow.unity
+    guid: 8fa41329989cd8a40a5335bd6b7a8f15
+  - enabled: 1
+    path: Assets/Scenes/Desert.unity
+    guid: 57a7db23ec43d3d43ad673a91401a550
+  - enabled: 1
+    path: Assets/Scenes/DungeonDesert.unity
+    guid: 86f8e9c0814db1c488b21e875080e608
+  - enabled: 1
+    path: Assets/Scenes/DungeonForest.unity
+    guid: 9fcec1732d649d047b85dfbe3a972dde
   m_configObjects: {}
