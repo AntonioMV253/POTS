@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
+
 public class PickUp : MonoBehaviour
 {
     public Transform holdSpot;
@@ -14,7 +14,7 @@ public class PickUp : MonoBehaviour
     public SpriteRenderer bowSpriteRenderer;
 
     private bool canThrow = true; // Permite lanzar solo si se ha recogido un objeto
-    private Vector3 lastMoveInputDirection; // Almacena la última dirección de movimiento válida
+    private Vector3 lastMoveInputDirection; // Almacena la última dirección de movimiento
 
     private void Start()
     {
@@ -27,9 +27,10 @@ public class PickUp : MonoBehaviour
 
     void Update()
     {
-        if (inputManager.MoveInput != Vector2.zero) // Si el jugador está moviéndose
+        // Actualiza la dirección de movimiento constantemente
+        if (inputManager.MoveInput != Vector2.zero)
         {
-            lastMoveInputDirection = inputManager.MoveInput.normalized;
+            lastMoveInputDirection = new Vector3(inputManager.MoveInput.x, inputManager.MoveInput.y).normalized;
         }
 
         if (inputManager.IsSelectionButtonHold && !isHoldingItem)
@@ -65,9 +66,8 @@ public class PickUp : MonoBehaviour
                 {
                     rb.simulated = true;
 
-                    // Calcula la dirección de lanzamiento basada en la última dirección de movimiento válida
+                    // Calcula la dirección de lanzamiento basada en la última dirección de movimiento
                     Vector3 throwDirection = lastMoveInputDirection * throwForce;
-
                     rb.velocity = throwDirection;
                 }
 
