@@ -6,6 +6,12 @@ public class PickUp : MonoBehaviour
     public Transform holdSpot;
     public LayerMask pickUpMask;
     public GameObject destroyEffectPrefab;
+
+    // Referencias a los prefabs
+    public GameObject heartPrefab;
+    public GameObject coinPrefab;
+    public GameObject bombPrefab;
+
     private GameObject itemHolding;
     private InputManager inputManager;
     private bool isHoldingItem = false;
@@ -90,7 +96,29 @@ public class PickUp : MonoBehaviour
             Destroy(destroyEffectInstance, 2.0f);
         }
 
+        // Lógica para dropear uno de los tres objetos
+        DropRandomItem(item.transform.position);
+
         Destroy(item);
         isHoldingItem = false;
+    }
+
+    // Función que decide qué objeto "dropear" basado en porcentajes
+    void DropRandomItem(Vector3 position)
+    {
+        float randomValue = Random.value; // Devuelve un valor entre 0 y 1
+
+        if (randomValue <= 0.4f) // 40% de posibilidad
+        {
+            Instantiate(heartPrefab, position, Quaternion.identity);
+        }
+        else if (randomValue <= 0.8f) // 40% de posibilidad
+        {
+            Instantiate(coinPrefab, position, Quaternion.identity);
+        }
+        else // 20% de posibilidad
+        {
+            Instantiate(bombPrefab, position, Quaternion.identity);
+        }
     }
 }
