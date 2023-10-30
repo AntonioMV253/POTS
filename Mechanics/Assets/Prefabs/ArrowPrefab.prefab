@@ -120,8 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2adf9124449a8b44f80d26ea621fa539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrowVelocity: 10000
-  arrowDamage: 6
+  arrowVelocity: 2
+  arrowDamage: 1
   rb: {fileID: 4301140955662101463}
 --- !u!61 &-9002907944467795489
 BoxCollider2D:
