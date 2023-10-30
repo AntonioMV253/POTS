@@ -9,20 +9,20 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] SpriteRenderer arrowGFX;
     [SerializeField] Transform bow;
     [SerializeField] Transform arrowSpawnPoint;
-    private PlayerMovement playerMovement; // Para detectar la dirección del jugador
+    private PlayerMovement playerMovement;
+    private InputManager inputManager;
 
     [Range(0, 10)]
     [SerializeField] float bowPower;
+    [SerializeField] float arrowDamage;
 
     float cooldown = 0f;
     bool canFire = true;
 
-    private InputManager inputManager;
-
     private void Start()
     {
         inputManager = FindObjectOfType<InputManager>();
-        playerMovement = GetComponent<PlayerMovement>(); // Inicializamos playerMovement
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     private void Update()
@@ -66,7 +66,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (Mathf.Abs(playerDirection.x) > Mathf.Abs(playerDirection.y))
         {
-            yOffset = 0; 
+            yOffset = 0;
         }
         else
         {
@@ -79,17 +79,16 @@ public class PlayerAttack : MonoBehaviour
     void FireBow()
     {
         float arrowSpeed = bowPower;
-        float arrowDamage = bowPower;
 
         Quaternion playerRotation = bow.rotation;
         Quaternion rot = playerRotation * Quaternion.Euler(new Vector3(0f, 0f, -90f));
 
         GameObject arrow = Instantiate(arrowPrefab, arrowSpawnPoint.position, rot);
         Arrow arrowScript = arrow.GetComponent<Arrow>();
-        arrowScript.ArrowVelocity = arrowSpeed;
-        arrowScript.ArrowDamage = arrowDamage;
+        arrowScript.arrowVelocity = arrowSpeed;
+        arrowScript.arrowDamage = arrowDamage;
 
         canFire = false;
-        cooldown = 1.5f; 
+        cooldown = 1.5f;
     }
 }

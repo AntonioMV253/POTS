@@ -35,18 +35,17 @@ public class Enemy2 : MonoBehaviour
 
     public void Knock(Rigidbody2D myRigidbody, float knockTime, float damage)
     {
-        StartCoroutine(KnockCo(myRigidbody, knockTime));
-        TakeDamage(damage);
+        StartCoroutine(KnockCo(myRigidbody, knockTime, damage));
     }
 
-    private IEnumerator KnockCo(Rigidbody2D myRigidbody, float knockTime)
+    private IEnumerator KnockCo(Rigidbody2D myRigidbody, float knockTime, float damage)
     {
         if (myRigidbody != null)
         {
             yield return new WaitForSeconds(knockTime);
             myRigidbody.velocity = Vector2.zero;
             currentState = EnemyState.idle;
-            myRigidbody.velocity = Vector2.zero;
+            TakeDamage(damage);
         }
     }
 }
