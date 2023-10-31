@@ -2238,7 +2238,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_101
+      name: corazon1
       rect:
         serializedVersion: 2
         x: 66
@@ -2259,7 +2259,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_102
+      name: corazon2
       rect:
         serializedVersion: 2
         x: 83
@@ -2280,10 +2280,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_103
+      name: corazon3
       rect:
         serializedVersion: 2
-        x: 100
+        x: 99
         y: 177
         width: 10
         height: 12
@@ -2301,7 +2301,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_104
+      name: corazon4
       rect:
         serializedVersion: 2
         x: 115
@@ -3107,7 +3107,7 @@ TextureImporter:
         width: 5
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3130,16 +3130,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      corazon1: 1779500837
+      corazon2: 1319188763
+      corazon3: -727568995
+      corazon4: 1219284492
       fuegito_3: 1338248742
       nada: -150384537
       objects_0: 883505282
       objects_1: -496644397
       objects_10: -61937273
       objects_100: 1761316573
-      objects_101: 1779500837
-      objects_102: 1319188763
-      objects_103: -727568995
-      objects_104: 1219284492
       objects_105: -1454402666
       objects_106: 470277593
       objects_107: 1440556895
