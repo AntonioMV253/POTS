@@ -125,7 +125,7 @@ MonoBehaviour:
     m_NumColorKeys: 7
     m_NumAlphaKeys: 2
   light: {fileID: 5189340154340615800}
-  rainDrops: {fileID: 0}
+  rainDrops: {fileID: 1111489644024231926, guid: 9e09ad6bb9d7e44449142a116ff57e3b, type: 3}
   rainSoundClip: {fileID: 8300000, guid: e21fb312ace7f7d4c93de5900c0b8ba4, type: 3}
   rainSoundVolume: 1
   rainSoundPitch: 1

@@ -457,6 +457,7 @@ GameObject:
   - component: {fileID: 207837657}
   - component: {fileID: 207837683}
   - component: {fileID: 207837685}
+  - component: {fileID: 207837687}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -861,6 +862,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bombPrefab: {fileID: 311596020949415285, guid: bbf0bebda83bc5247bdde08f57f67b50, type: 3}
   bombSpawnPoint: {fileID: 207837676}
+--- !u!114 &207837687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207837656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09853db05cd03844aa7c729e09d5ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpMask:
+    serializedVersion: 2
+    m_Bits: 256
+  torchPickUpCooldown: 0.5
 --- !u!1 &250151170
 GameObject:
   m_ObjectHideFlags: 0
