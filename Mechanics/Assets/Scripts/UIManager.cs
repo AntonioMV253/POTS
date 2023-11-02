@@ -8,14 +8,19 @@ public class UIManager : MonoBehaviour
 {
     private int totalMonedas;
     private int totalBombas;
+    private int totalPrismas;
+
 
     [SerializeField] private TMP_Text textoMonedas;
     [SerializeField] private TMP_Text textoBombas;
+    [SerializeField] private TMP_Text textoPrisma;
 
     private void Start()
     {
         Moneda.sumaMoneda += SumarMonedas;
-        Bomba.sumaBomba += SumarBombas; 
+        Bomba.sumaBomba += SumarBombas;
+        Prisma.sumaPrisma += SumarPrismas;
+
     }
 
     private void SumarMonedas(int moneda)
@@ -29,4 +34,11 @@ public class UIManager : MonoBehaviour
         totalBombas += bomba;
         textoBombas.text = totalBombas.ToString();
     }
+
+    private void SumarPrismas(int prisma)
+    {
+        totalPrismas += prisma;
+        textoPrisma.text = totalPrismas.ToString();
+    }
+
 }
