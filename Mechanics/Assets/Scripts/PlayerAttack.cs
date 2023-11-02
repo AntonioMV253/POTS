@@ -29,7 +29,7 @@ public class PlayerAttack : MonoBehaviour
     {
         HandleBowPositionAndRotation();
 
-        if (inputManager.IsActionButtonHold && canFire)
+        if (inputManager.IsStableButtonHold && canFire)
         {
             FireBow();
         }

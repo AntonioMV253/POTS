@@ -8,6 +8,7 @@ public class InputManager : MonoBehaviour
     public bool IsRunButtonHold;
     public bool IsActionButtonHold;
     public bool IsSelectionButtonHold;
+    public bool IsStableButtonHold;
     public Vector2 TouchPosition;
     public bool IsTouchPressed;
 
@@ -38,6 +39,10 @@ public class InputManager : MonoBehaviour
         IsSelectionButtonHold = Convert.ToBoolean(input.Get<float>());
     }
 
+    public void OnStable(InputValue input)
+    {
+        IsStableButtonHold = Convert.ToBoolean(input.Get<float>());
+    }
     public void OnTouch(InputValue input)
     {
         TouchPosition = input.Get<Vector2>();
