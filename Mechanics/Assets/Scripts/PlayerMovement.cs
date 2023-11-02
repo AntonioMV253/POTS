@@ -40,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         inputManager = GetComponent<InputManager>();
-        transform.position = startingPosition.initialValue;
         audioSource = GetComponent<AudioSource>();
 
         audioSource.loop = false;

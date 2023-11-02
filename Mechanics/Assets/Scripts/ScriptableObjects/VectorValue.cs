@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu]
-public class VectorValue : ScriptableObject, ISerializationCallbackReceiver
+public class VectorValue : ScriptableObject
 {
     public Vector2 initialValue;
-    public Vector2 defaultValue;
-    public void OnAfterDeserialize() { initialValue = defaultValue; }
-    public void OnBeforeSerialize() { }
 }
