@@ -38,11 +38,11 @@ public class DayAndNightCycle : MonoBehaviour
 
     private void Update()
     {
-        if (time > 70)
+        if (time > 500)
         {
             time = 0;
         }
-        if ((int)time >= 60)
+        if ((int)time >= 250)
         {
             if (!dayChangedFlag) // Verificar si el día ya ha sido registrado
             {
