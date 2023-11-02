@@ -512,7 +512,7 @@ MonoBehaviour:
   currentHealth: {fileID: 11400000, guid: 27c7b72e1ac35ac4988822e36b822a76, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: 23f85556626599d469e0d3274641edf4, type: 2}
   pickUpScript: {fileID: 0}
-  startingPosition: {fileID: 0}
+  startingPosition: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
   Speed: 4
   MaxSpeed: 8
   walkSounds:
@@ -539,6 +539,7 @@ MonoBehaviour:
   bow: {fileID: 1027852703}
   arrowSpawnPoint: {fileID: 1027852703}
   bowPower: 10
+  arrowDamage: 0
 --- !u!114 &131152398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1159,10 +1160,6 @@ MonoBehaviour:
   thrust: 1
   knockTime: 0.5
   damage: 1
-  leftHitbox: {fileID: 0}
-  rightHitbox: {fileID: 0}
-  downHitbox: {fileID: 0}
-  upHitbox: {fileID: 0}
 --- !u!60 &514826392
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1312,11 +1309,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.99
+      value: -49.3
       objectReference: {fileID: 0}
     - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.91
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1386,7 +1383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: SampleScene
-  PlayerPosition: {x: 0, y: 0}
+  PlayerPosition: {x: 10.96, y: 0.23}
   playerStorage: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
 --- !u!1 &637531807
 GameObject:
@@ -21692,10 +21689,6 @@ MonoBehaviour:
   thrust: 1
   knockTime: 0.5
   damage: 1
-  leftHitbox: {fileID: 0}
-  rightHitbox: {fileID: 0}
-  downHitbox: {fileID: 0}
-  upHitbox: {fileID: 0}
 --- !u!60 &897940521
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21947,10 +21940,6 @@ MonoBehaviour:
   thrust: 1
   knockTime: 0.5
   damage: 1
-  leftHitbox: {fileID: 0}
-  rightHitbox: {fileID: 0}
-  downHitbox: {fileID: 0}
-  upHitbox: {fileID: 0}
 --- !u!60 &998926742
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -22111,10 +22100,6 @@ MonoBehaviour:
   thrust: 1
   knockTime: 0.5
   damage: 1
-  leftHitbox: {fileID: 0}
-  rightHitbox: {fileID: 0}
-  downHitbox: {fileID: 0}
-  upHitbox: {fileID: 0}
 --- !u!60 &1121467324
 PolygonCollider2D:
   m_ObjectHideFlags: 0
