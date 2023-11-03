@@ -11998,7 +11998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897561204861303693, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_Size.y
-      value: 0.98173
+      value: 1.2036712
       objectReference: {fileID: 0}
     - target: {fileID: 4897561204861303693, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_Offset.x
@@ -12006,7 +12006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897561204861303693, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_Offset.y
-      value: -0.13947272
+      value: -0.25044334
       objectReference: {fileID: 0}
     - target: {fileID: 4897561204861303693, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_IsTrigger
@@ -14503,8 +14503,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Desert
-  newPlayerPosition: {x: 0, y: 0}
+  PlayerPosition: {x: -13.15, y: 17.7}
   playerStorage: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
+  fadeInPanel: {fileID: 0}
+  fadeOutPanel: {fileID: 0}
+  fadeWait: 0
 --- !u!1001 &1415871670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19016,7 +19019,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675287187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.76, y: 1.65, z: -10}
+  m_LocalPosition: {x: 9.55, y: 2.43, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19175,7 +19178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.76, y: 1.65}
+  m_AnchoredPosition: {x: 9.55, y: 2.43}
   m_SizeDelta: {x: 0.46875, y: 0.5625}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1733286734
@@ -19360,7 +19363,7 @@ MonoBehaviour:
   currentHealth: {fileID: 11400000, guid: 27c7b72e1ac35ac4988822e36b822a76, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: 23f85556626599d469e0d3274641edf4, type: 2}
   pickUpScript: {fileID: 0}
-  startingPosition: {fileID: 0}
+  startingPosition: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
   Speed: 4
   MaxSpeed: 8
   walkSounds:
@@ -19404,6 +19407,7 @@ MonoBehaviour:
   IsRunButtonHold: 0
   IsActionButtonHold: 0
   IsSelectionButtonHold: 0
+  IsStableButtonHold: 0
   TouchPosition: {x: 0, y: 0}
   IsTouchPressed: 0
 --- !u!114 &1733286741
@@ -75369,7 +75373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093199701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.76, y: 1.65, z: -10}
+  m_LocalPosition: {x: 9.55, y: 2.43, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

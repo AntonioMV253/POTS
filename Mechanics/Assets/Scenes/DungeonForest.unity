@@ -16586,11 +16586,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.3
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.44
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16660,8 +16660,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: SampleScene
-  newPlayerPosition: {x: 0, y: 0}
+  PlayerPosition: {x: 38.4, y: 35.37}
   playerStorage: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
+  fadeInPanel: {fileID: 0}
+  fadeOutPanel: {fileID: 0}
+  fadeWait: 0
 --- !u!1 &1773964050
 GameObject:
   m_ObjectHideFlags: 0
@@ -17618,7 +17621,7 @@ MonoBehaviour:
   currentHealth: {fileID: 11400000, guid: 27c7b72e1ac35ac4988822e36b822a76, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: 23f85556626599d469e0d3274641edf4, type: 2}
   pickUpScript: {fileID: 0}
-  startingPosition: {fileID: 0}
+  startingPosition: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
   Speed: 4
   MaxSpeed: 8
   walkSounds:
@@ -17662,6 +17665,7 @@ MonoBehaviour:
   IsRunButtonHold: 0
   IsActionButtonHold: 0
   IsSelectionButtonHold: 0
+  IsStableButtonHold: 0
   TouchPosition: {x: 0, y: 0}
   IsTouchPressed: 0
 --- !u!114 &2022883438
