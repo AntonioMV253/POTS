@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: {fileID: 11400000, guid: 27c7b72e1ac35ac4988822e36b822a76, type: 2}
+  initialHealthValue: 6
 --- !u!114 &581104
 MonoBehaviour:
   m_ObjectHideFlags: 0
