@@ -434,7 +434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Village
-  PlayerPosition: {x: 0, y: 0}
+  PlayerPosition: {x: -50.48, y: 2.45}
   playerStorage: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
   fadeInPanel: {fileID: 0}
   fadeOutPanel: {fileID: 0}
@@ -50038,7 +50038,7 @@ RectTransform:
   m_Children:
   - {fileID: 1701967921}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

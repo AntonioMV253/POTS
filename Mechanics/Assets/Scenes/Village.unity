@@ -512,7 +512,7 @@ MonoBehaviour:
   currentHealth: {fileID: 11400000, guid: 27c7b72e1ac35ac4988822e36b822a76, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: 23f85556626599d469e0d3274641edf4, type: 2}
   pickUpScript: {fileID: 0}
-  startingPosition: {fileID: 0}
+  startingPosition: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
   Speed: 4
   MaxSpeed: 8
   walkSounds:
@@ -1387,7 +1387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: SampleScene
-  PlayerPosition: {x: 0, y: 0}
+  PlayerPosition: {x: 11.08, y: 0.39}
   playerStorage: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
   fadeInPanel: {fileID: 0}
   fadeOutPanel: {fileID: 0}
