@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public enum PlayerState
 {
@@ -41,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         inputManager = GetComponent<InputManager>();
         transform.position = startingPosition.initialValue;
-        audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent <AudioSource>();
 
         audioSource.loop = false;
         audioSource.playOnAwake = false;
@@ -146,13 +147,13 @@ public class PlayerMovement : MonoBehaviour
         currentHealth.RuntimeValue -= damage;
         playerHealthSignal.Raise();
 
-        if (currentHealth.RuntimeValue > 0)
+        if (currentHealth.RuntimeValue <= 0)
         {
-            StartCoroutine(KnockCo(knockTime));
+            SceneManager.LoadScene("MenuInicial");
         }
         else
         {
-            this.gameObject.SetActive(false);
+            StartCoroutine(KnockCo(knockTime));
         }
     }
 
@@ -173,7 +174,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isStaggered)
         {
-            // El jugador está aturdido, no puede atacar
             yield break;
         }
 
