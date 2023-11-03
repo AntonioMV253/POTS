@@ -550,9 +550,9 @@ MonoBehaviour:
   sceneToLoad: Village
   PlayerPosition: {x: -50.48, y: 2.45}
   playerStorage: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
-  fadeInPanel: {fileID: 0}
-  fadeOutPanel: {fileID: 0}
-  fadeWait: 0
+  fadeInPanel: {fileID: 3690684992078107450, guid: c66094971d7d19a49bc973098f50c1df, type: 3}
+  fadeOutPanel: {fileID: 1077224120806223998, guid: b9b8ab20beafca04ea23eab72553bd1f, type: 3}
+  fadeWait: 0.33
 --- !u!1 &207837656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,8 +1092,8 @@ MonoBehaviour:
   sceneToLoad: InteriorCasa
   PlayerPosition: {x: -2.47, y: -3.25}
   playerStorage: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
-  fadeInPanel: {fileID: 0}
-  fadeOutPanel: {fileID: 0}
+  fadeInPanel: {fileID: 3690684992078107450, guid: c66094971d7d19a49bc973098f50c1df, type: 3}
+  fadeOutPanel: {fileID: 1077224120806223998, guid: b9b8ab20beafca04ea23eab72553bd1f, type: 3}
   fadeWait: 0.33
 --- !u!1 &321810925
 GameObject:
@@ -50851,9 +50851,9 @@ MonoBehaviour:
   sceneToLoad: DungeonForest
   PlayerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
-  fadeInPanel: {fileID: 0}
-  fadeOutPanel: {fileID: 0}
-  fadeWait: 0
+  fadeInPanel: {fileID: 3690684992078107450, guid: c66094971d7d19a49bc973098f50c1df, type: 3}
+  fadeOutPanel: {fileID: 1077224120806223998, guid: b9b8ab20beafca04ea23eab72553bd1f, type: 3}
+  fadeWait: 0.33
 --- !u!1001 &1921956503
 PrefabInstance:
   m_ObjectHideFlags: 0
