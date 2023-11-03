@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     public float minPitch = 0.8f;
     public float maxPitch = 1.2f;
 
-    private float staggerTime = 1.0f; // Tiempo de aturdimiento después de recibir daño
+    private float staggerTime = 1.0f;
     private bool isStaggered = false;
 
     private void Awake()
@@ -52,7 +52,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isStaggered)
         {
-            // El jugador está aturdido, no puede moverse
             return;
         }
 
@@ -141,7 +140,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isStaggered)
         {
-            // El jugador ya está aturdido, no recibe daño adicional
             return;
         }
 
