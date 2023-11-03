@@ -434,8 +434,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Village
-  newPlayerPosition: {x: 0, y: 0}
+  PlayerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
+  fadeInPanel: {fileID: 0}
+  fadeOutPanel: {fileID: 0}
+  fadeWait: 0
 --- !u!1 &207837656
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,6 +957,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250151170}
   m_CullTransparentMesh: 1
+--- !u!1 &267404841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6733801363818779302, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+  m_PrefabInstance: {fileID: 1548269458}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &267404842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267404841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438a5fe3b3a5dd54e9accc6c810e8d8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: InteriorCasa
+  PlayerPosition: {x: -2.47, y: -3.25}
+  playerStorage: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
+  fadeInPanel: {fileID: 0}
+  fadeOutPanel: {fileID: 0}
+  fadeWait: 0.33
 --- !u!1 &321810925
 GameObject:
   m_ObjectHideFlags: 0
@@ -48809,6 +48835,83 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1548269458
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.14018972
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897561204861303693, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2124949
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897561204861303693, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_Size.y
+      value: 0.70608354
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897561204861303693, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.1225934
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897561204861303693, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.74912417
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897561204861303693, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733801363818779302, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
+      propertyPath: m_Name
+      value: Scene Transition (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
 --- !u!212 &1590608699 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 6607677234490443513, guid: bf55e67d1276ed64ebeb8c734dd160bd, type: 3}
@@ -49566,8 +49669,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: DungeonForest
-  newPlayerPosition: {x: 0, y: 0}
+  PlayerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
+  fadeInPanel: {fileID: 0}
+  fadeOutPanel: {fileID: 0}
+  fadeWait: 0
 --- !u!1 &1971930871
 GameObject:
   m_ObjectHideFlags: 0
