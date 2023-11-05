@@ -14841,6 +14841,12 @@ MonoBehaviour:
   pauseButton: {fileID: 1985432821}
   continueButton: {fileID: 1442385858}
   quitButton: {fileID: 2114028807}
+  resetButton: {fileID: 1810827479}
+  saveButton: {fileID: 538443690}
+  objectsToHideOnPause:
+  - {fileID: 1388801643}
+  - {fileID: 1175026060}
+  gameSaveManager: {fileID: 1759639744}
 --- !u!114 &1115283065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51300,6 +51306,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+--- !u!114 &1759639744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1466331564494734635, guid: f1196d162c7ae49458b297c50a5836f0, type: 3}
+  m_PrefabInstance: {fileID: 1241400169}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4c7ce8ddda26f4e8b9b9a3b7791747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1763543174
 GameObject:
   m_ObjectHideFlags: 0
@@ -51897,7 +51914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1957199330
 RectTransform:
   m_ObjectHideFlags: 0
@@ -64027,7 +64044,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2114028808}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1115283064}
+        m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
+        m_MethodName: QuitToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2114028808
 MonoBehaviour:
   m_ObjectHideFlags: 0

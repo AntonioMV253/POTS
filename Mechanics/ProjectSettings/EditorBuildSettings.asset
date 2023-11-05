@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuInicial.unity
     guid: 04903915a4ac89041bca16d48506e2b9
   - enabled: 1
-    path: Assets/Scenes/InteriorCasa.unity
-    guid: 3d9ff8dbdf19fcf49b17ffe4779b144f
-  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/InteriorCasa.unity
+    guid: 3d9ff8dbdf19fcf49b17ffe4779b144f
   - enabled: 1
     path: Assets/Scenes/Village.unity
     guid: a8b913ec409a8fd4bb58f5a1924b681a
