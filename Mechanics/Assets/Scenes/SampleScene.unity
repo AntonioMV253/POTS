@@ -2035,7 +2035,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 538443691}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1759639744}
+        m_TargetAssemblyTypeName: GameSaveManager, Assembly-CSharp
+        m_MethodName: SaveScriptables
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &538443691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14840,13 +14852,13 @@ MonoBehaviour:
   mainMenu: MenuInicial
   pauseButton: {fileID: 1985432821}
   continueButton: {fileID: 1442385858}
-  quitButton: {fileID: 2114028807}
-  resetButton: {fileID: 1810827479}
-  saveButton: {fileID: 538443690}
   objectsToHideOnPause:
   - {fileID: 1388801643}
   - {fileID: 1175026060}
   gameSaveManager: {fileID: 1759639744}
+  savedPlayerTransform: {fileID: 207837676}
+  uiObject: {fileID: 1388801643}
+  objectsToActivateOnStart: []
 --- !u!114 &1115283065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49844,9 +49856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e946a65d84f19964392dad40699891b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoMonedas: {fileID: 1792403313}
-  textoBombas: {fileID: 1279449070}
-  textoPrisma: {fileID: 1971930872}
+  uiObject: {fileID: 1388801643}
 --- !u!1 &1442385856
 GameObject:
   m_ObjectHideFlags: 0

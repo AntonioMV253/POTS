@@ -11,12 +11,14 @@ public class PauseManager : MonoBehaviour
     public string mainMenu;
     public Button pauseButton;
     public Button continueButton;
-    public Button quitButton;
-    public Button resetButton;
-    public Button saveButton;
 
     public List<GameObject> objectsToHideOnPause;
-    public GameSaveManager gameSaveManager; // Referencia al GameSaveManager
+    public GameSaveManager gameSaveManager;
+    public Transform savedPlayerTransform;
+
+    // Agrega un campo para tu UI o la lista de objetos
+    public GameObject uiObject; // Asigna tu objeto de UI desde el Inspector
+    public List<GameObject> objectsToActivateOnStart; // Asigna tus objetos desde el Inspector
 
     void Start()
     {
@@ -24,9 +26,21 @@ public class PauseManager : MonoBehaviour
         pausePanel.SetActive(false);
         pauseButton.onClick.AddListener(ChangePause);
         continueButton.onClick.AddListener(ContinueGame);
-        quitButton.onClick.AddListener(QuitToMain);
-        resetButton.onClick.AddListener(ResetGame);
-        saveButton.onClick.AddListener(SaveGame);
+
+        // Activa tu UI al inicio
+        if (uiObject != null)
+        {
+            uiObject.SetActive(true);
+        }
+
+        // Activa una lista de objetos al inicio
+        if (objectsToActivateOnStart != null)
+        {
+            foreach (var obj in objectsToActivateOnStart)
+            {
+                obj.SetActive(true);
+            }
+        }
     }
 
     public void ChangePause()
@@ -43,6 +57,10 @@ public class PauseManager : MonoBehaviour
         else
         {
             Time.timeScale = 1f;
+            transform.position = savedPlayerTransform.position;
+            transform.rotation = savedPlayerTransform.rotation;
+            transform.localScale = savedPlayerTransform.localScale;
+
             foreach (var obj in objectsToHideOnPause)
             {
                 obj.SetActive(true);
@@ -55,6 +73,9 @@ public class PauseManager : MonoBehaviour
     {
         isPaused = false;
         Time.timeScale = 1f;
+        transform.position = savedPlayerTransform.position;
+        transform.rotation = savedPlayerTransform.rotation;
+        transform.localScale = savedPlayerTransform.localScale;
         pausePanel.SetActive(false);
         foreach (var obj in objectsToHideOnPause)
         {
@@ -65,15 +86,6 @@ public class PauseManager : MonoBehaviour
     public void QuitToMain()
     {
         SceneManager.LoadScene(mainMenu);
-    }
-
-    public void ResetGame()
-    {
-        gameSaveManager.ResetScriptables();
-    }
-
-    public void SaveGame()
-    {
-        gameSaveManager.SaveScriptables();
+        Time.timeScale = 1f;
     }
 }
