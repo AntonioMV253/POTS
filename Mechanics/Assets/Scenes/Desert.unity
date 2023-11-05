@@ -92999,6 +92999,42 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
+      propertyPath: ShapeModule.type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
+      propertyPath: ShapeModule.m_Scale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
+      propertyPath: SizeModule.y.minMaxState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
+      propertyPath: SizeModule.z.minMaxState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
+      propertyPath: RotationModule.x.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
+      propertyPath: RotationModule.y.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 100
       objectReference: {fileID: 0}
@@ -93025,6 +93061,10 @@ PrefabInstance:
     - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
       propertyPath: InitialModule.startColor.minColor.a
       value: 0.31764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 19900000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19900000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
       propertyPath: m_SortingOrder
