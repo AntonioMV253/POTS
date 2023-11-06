@@ -5,11 +5,14 @@ using UnityEngine;
 public class log : Enemy2
 {
 
-    private Rigidbody2D myRigidbody;
+
+    public Rigidbody2D myRigidbody;
+    [Header("Target Variables")]
     public Transform target;
     public float chaseRadius;
     public float attackRadius;
-    public Transform homePosition;
+
+    [Header("Animator")]
     public Animator anim;
 
 
@@ -28,7 +31,7 @@ public class log : Enemy2
         CheckDistance();
     }
 
-    void CheckDistance()
+    public virtual void CheckDistance()
     {
         if (Vector3.Distance(target.position,
                             transform.position) <= chaseRadius
@@ -54,13 +57,13 @@ public class log : Enemy2
         }
     }
 
-    private void SetAnimFloat(Vector2 setVector)
+    public void SetAnimFloat(Vector2 setVector)
     {
         anim.SetFloat("moveX", setVector.x);
         anim.SetFloat("moveY", setVector.y);
     }
 
-    private void changeAnim(Vector2 direction)
+    public void changeAnim(Vector2 direction)
     {
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
@@ -86,7 +89,7 @@ public class log : Enemy2
         }
     }
 
-    private void ChangeState(EnemyState newState)
+    public void ChangeState(EnemyState newState)
     {
         if (currentState != newState)
         {

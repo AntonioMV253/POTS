@@ -566,6 +566,10 @@ PrefabInstance:
       propertyPath: otherTag
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7560103274152831719, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
     - target: {fileID: 7560103274152831737, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1333,6 +1337,10 @@ PrefabInstance:
       propertyPath: otherTag
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7560103274152831719, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
     - target: {fileID: 7560103274152831737, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2652,9 +2660,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7927790684035335393, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
     - target: {fileID: 7927790684035335395, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7927790684035335395, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9234,7 +9246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
-  otherTag: 
+  otherTag: enemy
   damage: 1
 --- !u!1 &737392945
 GameObject:
@@ -9662,9 +9674,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7927790684035335393, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
     - target: {fileID: 7927790684035335395, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7927790684035335395, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13834,9 +13850,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7927790684035335393, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
     - target: {fileID: 7927790684035335395, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7927790684035335395, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14201,9 +14221,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7927790684035335393, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
     - target: {fileID: 7927790684035335395, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7927790684035335395, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14437,6 +14461,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020931160}
   m_CullTransparentMesh: 1
+--- !u!95 &1047758550 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7927790684035335398, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+  m_PrefabInstance: {fileID: 7927790684421875308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1047758551 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 7927790684035335399, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+  m_PrefabInstance: {fileID: 7927790684421875308}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1073010665
 GameObject:
   m_ObjectHideFlags: 0
@@ -49052,7 +49086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
-  otherTag: 
+  otherTag: enemy
   damage: 1
 --- !u!1001 &1241400169
 PrefabInstance:
@@ -49464,7 +49498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
-  otherTag: 
+  otherTag: enemy
   damage: 1
 --- !u!1 &1379805061
 GameObject:
@@ -49524,7 +49558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.2
-  otherTag: Player
+  otherTag: 
   damage: 1
 --- !u!50 &1379805064
 Rigidbody2D:
@@ -49617,10 +49651,11 @@ MonoBehaviour:
   enemyName: slime enemy
   baseAttack: 1
   moveSpeed: 0.5
+  deathEffect: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
+  myRigidbody: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1
-  homePosition: {fileID: 0}
   anim: {fileID: 0}
 --- !u!212 &1379805068
 SpriteRenderer:
@@ -50261,7 +50296,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 311596020949415279, guid: bbf0bebda83bc5247bdde08f57f67b50, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 311596020949415279, guid: bbf0bebda83bc5247bdde08f57f67b50, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50318,7 +50353,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50781,7 +50816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6854784397378382612, guid: b093f126f39f55b488e20cfd0db1e615, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6854784397378382612, guid: b093f126f39f55b488e20cfd0db1e615, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50834,7 +50869,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4451437780071279566, guid: 470f6ac02c633dc4aa59ff8be59cf6e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51300,9 +51335,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7927790684035335393, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
     - target: {fileID: 7927790684035335395, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7927790684035335395, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52174,6 +52213,10 @@ PrefabInstance:
       propertyPath: otherTag
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7560103274152831719, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
     - target: {fileID: 7560103274152831737, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -64230,7 +64273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
-  otherTag: 
+  otherTag: enemy
   damage: 1
 --- !u!1 &2122818883
 GameObject:
@@ -74439,7 +74482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3863583434648740284, guid: ae29f2050418f534fbf36e613fa345ee, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3863583434648740284, guid: ae29f2050418f534fbf36e613fa345ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -75046,6 +75089,10 @@ PrefabInstance:
       propertyPath: otherTag
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7560103274152831719, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
     - target: {fileID: 7560103274152831737, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -75099,6 +75146,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7927790684035335393, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1047758550}
+    - target: {fileID: 7927790684035335393, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 1198431140947087119, guid: 531545a1b39670f47884b5ea8ff5a9af, type: 3}
+    - target: {fileID: 7927790684035335393, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: myRigidbody
+      value: 
+      objectReference: {fileID: 1047758551}
     - target: {fileID: 7927790684035335395, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_RootOrder
       value: 21
