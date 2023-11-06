@@ -562,6 +562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7560103274152831714, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
+      propertyPath: otherTag
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7560103274152831737, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -811,6 +815,12 @@ MonoBehaviour:
   runSound: {fileID: 8300000, guid: cee334067c011c04faedb5ba8e45704d, type: 3}
   minPitch: 0.8
   maxPitch: 1.2
+  flashColor: {r: 1, g: 0, b: 0, a: 0.79607844}
+  regularColor: {r: 1, g: 1, b: 1, a: 1}
+  flashDuration: 0.07
+  numberOfFlashes: 4
+  triggerCollider: {fileID: 207837683}
+  mySprite: {fileID: 207837662}
 --- !u!114 &207837671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1318,6 +1328,10 @@ PrefabInstance:
     - target: {fileID: 7560103274152831713, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
       propertyPath: m_Name
       value: Slime (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560103274152831714, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
+      propertyPath: otherTag
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7560103274152831737, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
       propertyPath: m_RootOrder
@@ -2685,6 +2699,10 @@ PrefabInstance:
     - target: {fileID: 7927790684035335397, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_Name
       value: log (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7927790684035335421, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: otherTag
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
@@ -9216,6 +9234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
+  otherTag: 
   damage: 1
 --- !u!1 &737392945
 GameObject:
@@ -9690,6 +9709,10 @@ PrefabInstance:
     - target: {fileID: 7927790684035335397, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_Name
       value: log (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7927790684035335421, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: otherTag
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
@@ -13859,6 +13882,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: log (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7927790684035335421, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: otherTag
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
 --- !u!114 &940934531 stripped
@@ -14221,6 +14248,10 @@ PrefabInstance:
     - target: {fileID: 7927790684035335397, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_Name
       value: log (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7927790684035335421, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: otherTag
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
@@ -49021,6 +49052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
+  otherTag: 
   damage: 1
 --- !u!1001 &1241400169
 PrefabInstance:
@@ -49432,6 +49464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
+  otherTag: 
   damage: 1
 --- !u!1 &1379805061
 GameObject:
@@ -49491,6 +49524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.2
+  otherTag: Player
   damage: 1
 --- !u!50 &1379805064
 Rigidbody2D:
@@ -51314,6 +51348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: log (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7927790684035335421, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: otherTag
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
 --- !u!114 &1759639744 stripped
@@ -52131,6 +52169,10 @@ PrefabInstance:
     - target: {fileID: 7560103274152831713, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
       propertyPath: m_Name
       value: Slime (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560103274152831714, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
+      propertyPath: otherTag
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7560103274152831737, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
       propertyPath: m_RootOrder
@@ -64188,6 +64230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
+  otherTag: 
   damage: 1
 --- !u!1 &2122818883
 GameObject:
@@ -74999,6 +75042,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime
       objectReference: {fileID: 0}
+    - target: {fileID: 7560103274152831714, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
+      propertyPath: otherTag
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7560103274152831737, guid: aad8913102a2d024490cd56b53961c5f, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -75099,6 +75146,10 @@ PrefabInstance:
     - target: {fileID: 7927790684035335397, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
       propertyPath: m_Name
       value: log
+      objectReference: {fileID: 0}
+    - target: {fileID: 7927790684035335421, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
+      propertyPath: otherTag
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
