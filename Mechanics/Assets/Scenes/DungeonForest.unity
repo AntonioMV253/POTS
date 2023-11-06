@@ -2690,6 +2690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
+  otherTag: 
   damage: 1
 --- !u!60 &650126289
 PolygonCollider2D:
@@ -6650,6 +6651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
+  otherTag: 
   damage: 1
 --- !u!60 &702985460
 PolygonCollider2D:
@@ -7581,9 +7583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e946a65d84f19964392dad40699891b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoMonedas: {fileID: 53735142}
-  textoBombas: {fileID: 397262258}
-  textoPrisma: {fileID: 2011371411}
+  uiObject: {fileID: 0}
 --- !u!114 &1182169286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16814,6 +16814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
+  otherTag: 
   damage: 1
 --- !u!60 &1473736618
 PolygonCollider2D:
@@ -17091,6 +17092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.5
+  otherTag: 
   damage: 1
 --- !u!60 &1635023176
 PolygonCollider2D:
@@ -18399,6 +18401,16 @@ MonoBehaviour:
   runSound: {fileID: 8300000, guid: cee334067c011c04faedb5ba8e45704d, type: 3}
   minPitch: 0.8
   maxPitch: 1.2
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+  regularColor: {r: 0, g: 0, b: 0, a: 0}
+  flashDuration: 0
+  numberOfFlashes: 0
+  triggerCollider: {fileID: 0}
+  mySprite: {fileID: 0}
+  normalSpeed: 4.5
+  runningSpeed: 8.5
+  iceSpeed: 6
+  slidingFactor: 0.1
 --- !u!114 &2022883436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46615,6 +46627,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1609824275821697588, guid: 697fa9ee4c48a0d4a9a0be9fef933147, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 1.2319483
+      objectReference: {fileID: 0}
+    - target: {fileID: 1609824275821697588, guid: 697fa9ee4c48a0d4a9a0be9fef933147, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 4.135782
+      objectReference: {fileID: 0}
     - target: {fileID: 6156591358714117757, guid: 697fa9ee4c48a0d4a9a0be9fef933147, type: 3}
       propertyPath: m_RootOrder
       value: 13
