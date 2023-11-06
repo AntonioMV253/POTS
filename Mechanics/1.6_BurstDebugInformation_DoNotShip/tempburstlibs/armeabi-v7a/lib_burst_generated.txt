@@ -108,6 +108,8 @@ Library: C:\Users\Antonio\Documents\GitHub\POTS\Mechanics\Temp\StagingArea\tempb
 --compilation-defines=ENABLE_TIMELINE
 --compilation-defines=ENABLE_INPUT_SYSTEM
 --compilation-defines=TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
+--compilation-defines=CROSS_PLATFORM_INPUT
+--compilation-defines=MOBILE_INPUT
 --compilation-defines=PACKAGE_PHYSICS
 --compilation-defines=PACKAGE_PHYSICS2D
 --compilation-defines=PACKAGE_TILEMAP
