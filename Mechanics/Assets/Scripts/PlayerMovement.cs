@@ -35,13 +35,22 @@ public class PlayerMovement : MonoBehaviour
     private float staggerTime = 1.0f;
     private bool isStaggered = false;
 
-    [Header("Frames Daño")]
     public Color flashColor;
     public Color regularColor;
     public float flashDuration;
     public int numberOfFlashes;
     public Collider2D triggerCollider;
     public SpriteRenderer mySprite;
+
+    public float normalSpeed = 4.5f; // Velocidad normal
+    public float runningSpeed = 8.5f; // Velocidad al correr
+    public float iceSpeed = 6.0f; // Velocidad en el hielo
+    public float slidingFactor = 0.1f; // Factor de deslizamiento
+
+    private bool isSliding = false;
+    private bool wasRunning = false; // Para conservar si el jugador estaba corriendo antes de entrar al hielo
+
+    private Vector2 lastMoveDirection; // Almacena la última dirección de movimiento
 
     private void Awake()
     {
@@ -50,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         inputManager = GetComponent<InputManager>();
         transform.position = startingPosition.initialValue;
-        audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent <AudioSource>();
 
         audioSource.loop = false;
         audioSource.playOnAwake = false;
@@ -64,44 +73,34 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        float currentSpeed = (currentState == PlayerState.Run) ? MaxSpeed : Speed;
+        float currentSpeed = (currentState == PlayerState.Run) ? runningSpeed : (isSliding ? iceSpeed : normalSpeed);
 
-        Vector2 moveDirection = moveInput.normalized;
-        Vector2 velocity = moveDirection * currentSpeed;
+        if (isSliding)
+        {
+            // Aplicar el factor de deslizamiento en el hielo
+            myRigidbody.velocity *= 1.0f - slidingFactor;
+
+            // Mantener el ángulo de movimiento
+            Vector2 moveDirection = myRigidbody.velocity.normalized;
+            myRigidbody.velocity = moveDirection * currentSpeed;
+
+            // Aplicar una pequeña fuerza angular para simular el deslizamiento angular
+            myRigidbody.AddTorque(lastMoveDirection.x * -0.1f);
+        }
+
+        Vector2 moveInputNormalized = moveInput.normalized;
+        if (moveInputNormalized != Vector2.zero)
+        {
+            lastMoveDirection = moveInputNormalized;
+        }
+
+        Vector2 velocity = moveInputNormalized * currentSpeed;
         myRigidbody.velocity = velocity;
 
         if (currentState != PlayerState.Attack)
         {
             UpdateAnimationAndMove();
         }
-    }
-
-    private void UpdateAnimationAndMove()
-    {
-        if (moveInput.magnitude > 0)
-        {
-            animator.SetFloat("MoveX", moveInput.x);
-            animator.SetFloat("MoveY", moveInput.y);
-            animator.SetBool("Moving", true);
-
-            if (currentState == PlayerState.Walk && !audioSource.isPlaying)
-            {
-                PlayRandomWalkSound();
-            }
-        }
-        else
-        {
-            animator.SetBool("Moving", false);
-        }
-    }
-
-    private void PlayRandomWalkSound()
-    {
-        AudioClip walkSound = walkSounds[Random.Range(0, walkSounds.Length)];
-
-        audioSource.clip = walkSound;
-        audioSource.pitch = Random.Range(minPitch, maxPitch);
-        audioSource.Play();
     }
 
     public void OnMove(InputValue input)
@@ -114,6 +113,7 @@ public class PlayerMovement : MonoBehaviour
         if (input.isPressed)
         {
             currentState = PlayerState.Run;
+            wasRunning = true;
             if (audioSource.isPlaying)
             {
                 audioSource.Stop();
@@ -125,6 +125,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             currentState = PlayerState.Walk;
+            wasRunning = false;
         }
     }
 
@@ -162,6 +163,43 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             StartCoroutine(KnockCo(knockTime));
+        }
+    }
+
+    private void PlayRandomWalkSound()
+    {
+        AudioClip walkSound = walkSounds[Random.Range(0, walkSounds.Length)];
+
+        audioSource.clip = walkSound;
+        audioSource.pitch = Random.Range(minPitch, maxPitch);
+        audioSource.Play();
+    }
+
+    private void UpdateAnimationAndMove()
+    {
+        if (moveInput.magnitude > 0)
+        {
+            animator.SetFloat("MoveX", moveInput.x);
+            animator.SetFloat("MoveY", moveInput.y);
+            animator.SetBool("Moving", true);
+
+            if (currentState == PlayerState.Walk && !audioSource.isPlaying)
+            {
+                PlayRandomWalkSound();
+            }
+        }
+        else
+        {
+            animator.SetBool("Moving", false);
+        }
+    }
+
+    public void SetSliding(bool isSliding)
+    {
+        this.isSliding = isSliding;
+        if (!isSliding && wasRunning)
+        {
+            currentState = PlayerState.Run;
         }
     }
 
