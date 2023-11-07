@@ -179,8 +179,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (moveInput.magnitude > 0)
         {
-            animator.SetFloat("MoveX", moveInput.x);
-            animator.SetFloat("MoveY", moveInput.y);
+            Vector2 roundedInput = new Vector2(Mathf.Round(moveInput.x), Mathf.Round(moveInput.y));
+
+            animator.SetFloat("MoveX", roundedInput.x);
+            animator.SetFloat("MoveY", roundedInput.y);
             animator.SetBool("Moving", true);
 
             if (currentState == PlayerState.Walk && !audioSource.isPlaying)
@@ -193,6 +195,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Moving", false);
         }
     }
+
 
     public void SetSliding(bool isSliding)
     {

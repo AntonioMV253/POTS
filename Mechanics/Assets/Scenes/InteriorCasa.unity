@@ -933,7 +933,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446801773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8419318, y: 0.9656583, z: -10}
+  m_LocalPosition: {x: -3.2889733, y: 0.96565735, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12153,10 +12153,10 @@ MonoBehaviour:
   maxPitch: 1.2
   flashColor: {r: 0, g: 0, b: 0, a: 0}
   regularColor: {r: 0, g: 0, b: 0, a: 0}
-  flashDuration: 0
-  numberOfFlashes: 0
-  triggerCollider: {fileID: 0}
-  mySprite: {fileID: 0}
+  flashDuration: 0.07
+  numberOfFlashes: 4
+  triggerCollider: {fileID: 1600890902}
+  mySprite: {fileID: 1600890904}
   normalSpeed: 4.5
   runningSpeed: 8.5
   iceSpeed: 6

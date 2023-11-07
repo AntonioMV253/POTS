@@ -730,12 +730,12 @@ MonoBehaviour:
   runSound: {fileID: 8300000, guid: cee334067c011c04faedb5ba8e45704d, type: 3}
   minPitch: 0.8
   maxPitch: 1.2
-  flashColor: {r: 0, g: 0, b: 0, a: 0}
-  regularColor: {r: 0, g: 0, b: 0, a: 0}
-  flashDuration: 0
-  numberOfFlashes: 0
-  triggerCollider: {fileID: 0}
-  mySprite: {fileID: 0}
+  flashColor: {r: 1, g: 0, b: 0, a: 0.7294118}
+  regularColor: {r: 1, g: 1, b: 1, a: 0}
+  flashDuration: 0.07
+  numberOfFlashes: 4
+  triggerCollider: {fileID: 98032242}
+  mySprite: {fileID: 98032244}
   normalSpeed: 4.5
   runningSpeed: 8.5
   iceSpeed: 6
@@ -4061,6 +4061,11 @@ Animator:
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7927790684035335399, guid: d467e5979f0a43a4bb0bd7535b667749, type: 3}
   m_PrefabInstance: {fileID: 338675741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!66 &365883333 stripped
+CompositeCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3981764936093926844, guid: c73bc4a47bbde6e47876629f07f2417b, type: 3}
+  m_PrefabInstance: {fileID: 679279645}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &370215589
 GameObject:
@@ -87316,6 +87321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871523807}
   - component: {fileID: 1871523806}
+  - component: {fileID: 1871523808}
   m_Layer: 0
   m_Name: CamaraP
   m_TagString: Untagged
@@ -87377,6 +87383,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1871523808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871523805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConfineMode: 0
+  m_BoundingVolume: {fileID: 0}
+  m_BoundingShape2D: {fileID: 365883333}
+  m_ConfineScreenEdges: 1
+  m_Damping: 0
 --- !u!1 &1872392549
 GameObject:
   m_ObjectHideFlags: 0

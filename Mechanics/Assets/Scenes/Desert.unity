@@ -97585,12 +97585,12 @@ MonoBehaviour:
   runSound: {fileID: 8300000, guid: cee334067c011c04faedb5ba8e45704d, type: 3}
   minPitch: 0.8
   maxPitch: 1.2
-  flashColor: {r: 0, g: 0, b: 0, a: 0}
-  regularColor: {r: 0, g: 0, b: 0, a: 0}
-  flashDuration: 0
-  numberOfFlashes: 0
-  triggerCollider: {fileID: 0}
-  mySprite: {fileID: 0}
+  flashColor: {r: 1, g: 1, b: 1, a: 0}
+  regularColor: {r: 1, g: 0, b: 0, a: 0.80784315}
+  flashDuration: 0.07
+  numberOfFlashes: 4
+  triggerCollider: {fileID: 1963093733}
+  mySprite: {fileID: 1963093735}
   normalSpeed: 4.5
   runningSpeed: 8.5
   iceSpeed: 6
