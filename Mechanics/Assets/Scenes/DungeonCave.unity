@@ -731,7 +731,7 @@ MonoBehaviour:
   minPitch: 0.8
   maxPitch: 1.2
   flashColor: {r: 1, g: 0, b: 0, a: 0.7294118}
-  regularColor: {r: 1, g: 1, b: 1, a: 0}
+  regularColor: {r: 1, g: 1, b: 1, a: 1}
   flashDuration: 0.07
   numberOfFlashes: 4
   triggerCollider: {fileID: 98032242}
@@ -4733,7 +4733,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507725128}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9c04703893c88848bb6b4b798e993ca, type: 3}
   m_Name: 
