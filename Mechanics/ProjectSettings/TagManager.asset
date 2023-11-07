@@ -58,3 +58,6 @@ TagManager:
   - name: Player
     uniqueID: 864084591
     locked: 0
+  - name: Breakable
+    uniqueID: 1703048447
+    locked: 0
