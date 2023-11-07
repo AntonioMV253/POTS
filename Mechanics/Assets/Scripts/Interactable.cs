@@ -5,7 +5,7 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
 
-    public Signal context;
+    public SignalSender context;
     public bool playerInRange;
 
     void Start()

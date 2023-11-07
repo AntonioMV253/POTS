@@ -151,7 +151,7 @@ MonoBehaviour:
     collectorTag: Player
     pickUpType: 2
     shadow: 1
-    destroyTime: 3
+    destroyTime: 0
     colliderTags: []
 --- !u!61 &470465162470413153
 BoxCollider2D:

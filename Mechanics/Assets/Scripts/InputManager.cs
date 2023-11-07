@@ -23,7 +23,6 @@ public class InputManager : MonoBehaviour
         }
     }
 
-
     public void OnRun(InputValue input)
     {
         IsRunButtonHold = Convert.ToBoolean(input.Get<float>());
@@ -43,10 +42,10 @@ public class InputManager : MonoBehaviour
     {
         IsStableButtonHold = Convert.ToBoolean(input.Get<float>());
     }
+
     public void OnTouch(InputValue input)
     {
         TouchPosition = input.Get<Vector2>();
         IsTouchPressed = true;
     }
-
 }
