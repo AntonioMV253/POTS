@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DungeonForest.unity
     guid: 9fcec1732d649d047b85dfbe3a972dde
+  - enabled: 1
+    path: Assets/Scenes/DungeonCave.unity
+    guid: a6c8fa77292272044ad694b05bc6ed61
   m_configObjects: {}
