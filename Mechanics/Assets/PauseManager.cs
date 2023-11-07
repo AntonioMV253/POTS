@@ -20,6 +20,12 @@ public class PauseManager : MonoBehaviour
     public GameObject uiObject; // Asigna tu objeto de UI desde el Inspector
     public List<GameObject> objectsToActivateOnStart; // Asigna tus objetos desde el Inspector
 
+    void Awake()
+    {
+        // Asegúrate de que el PauseManager sea un objeto DontDestroyOnLoad
+        DontDestroyOnLoad(gameObject);
+    }
+
     void Start()
     {
         isPaused = false;
