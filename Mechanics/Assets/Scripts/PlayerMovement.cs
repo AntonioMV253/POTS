@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     public SignalSender playerHealthSignal;
     public PickUp pickUpScript;
     public VectorValue startingPosition;
+    public PauseManager pauseManager;
+
 
     public float Speed = 4;
     public float MaxSpeed = 8;
@@ -65,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
         audioSource.playOnAwake = false;
         audioSource.volume = 0.5f;
     }
+
 
     private void FixedUpdate()
     {
@@ -145,7 +148,6 @@ public class PlayerMovement : MonoBehaviour
             UpdateAnimationAndMove();
         }
     }
-
     public void Knock(float knockTime, float damage)
     {
         if (isStaggered)
@@ -158,13 +160,33 @@ public class PlayerMovement : MonoBehaviour
 
         if (currentHealth.RuntimeValue <= 0)
         {
-            SceneManager.LoadScene("MenuInicial");
+            // Encuentra el PauseManager por tag
+            GameObject pauseManagerObject = GameObject.FindWithTag("PauseManagerTag");
+            if (pauseManagerObject != null)
+            {
+                // Obtiene el componente PauseManager del objeto encontrado
+                PauseManager pauseManagerScript = pauseManagerObject.GetComponent<PauseManager>();
+                if (pauseManagerScript != null)
+                {
+                    // Activa el panel de muerte a través del script PauseManager
+                    pauseManagerScript.ActivateDeathPanel();
+                }
+                else
+                {
+                    Debug.LogError("PauseManager script not found on object with 'PauseManagerTag'.");
+                }
+            }
+            else
+            {
+                Debug.LogError("No se encontró un objeto con el tag 'PauseManagerTag' en la escena.");
+            }
         }
         else
         {
             StartCoroutine(KnockCo(knockTime));
         }
     }
+
 
     private void PlayRandomWalkSound()
     {

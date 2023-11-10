@@ -6,17 +6,18 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager Instance { get; private set; }
+
     public int TotalMonedas { get; private set; }
     public int TotalBombas { get; private set; }
     public int TotalPrismas { get; private set; }
-
-    public static UIManager Instance { get; private set; }
 
     [SerializeField] private TMP_Text textoMonedas;
     [SerializeField] private TMP_Text textoBombas;
     [SerializeField] private TMP_Text textoPrisma;
 
     public GameObject uiObject; // Asigna tu objeto de UI desde el Inspector
+    public GameObject ganarPanel; // Asigna el GanarPanel desde el Inspector
 
     private void Awake()
     {
@@ -28,17 +29,28 @@ public class UIManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            return;
         }
 
-        SceneManager.sceneLoaded += OnSceneLoaded; // Suscribe el método OnSceneLoaded al evento sceneLoaded
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnEnable()
+    {
+        Moneda.sumaMoneda += SumarMonedas; // Suscribe tus métodos a los eventos
+        Bomba.sumaBomba += SumarBombas;
+        Prisma.sumaPrisma += SumarPrismas;
+    }
+
+    private void OnDisable()
+    {
+        Moneda.sumaMoneda -= SumarMonedas; // Desuscribe tus métodos de los eventos
+        Bomba.sumaBomba -= SumarBombas;
+        Prisma.sumaPrisma -= SumarPrismas;
     }
 
     private void Start()
     {
-        Moneda.sumaMoneda += SumarMonedas;
-        Bomba.sumaBomba += SumarBombas;
-        Prisma.sumaPrisma += SumarPrismas;
-
         UpdateUIText();
     }
 
@@ -58,6 +70,23 @@ public class UIManager : MonoBehaviour
     {
         TotalPrismas += prisma;
         UpdateUIText();
+
+        if (TotalPrismas >= 3)
+        {
+            MostrarGanarPanel();
+        }
+    }
+
+    private void MostrarGanarPanel()
+    {
+        if (ganarPanel != null)
+        {
+            ganarPanel.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("GanarPanel no está asignado en el Inspector.");
+        }
     }
 
     public void RestarBombas()
@@ -69,6 +98,14 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void ResetCounts()
+    {
+        TotalMonedas = 0;
+        TotalBombas = 0;
+        TotalPrismas = 0;
+        UpdateUIText();
+    }
+
     private void UpdateUIText()
     {
         textoMonedas.text = TotalMonedas.ToString();
@@ -76,25 +113,17 @@ public class UIManager : MonoBehaviour
         textoPrisma.text = TotalPrismas.ToString();
     }
 
-    // Este método se ejecutará cada vez que se cargue una nueva escena
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Verifica si la escena recién cargada no es el menú principal
-        if (scene.name != "MenuInicial")
+        ResetCounts(); // Reinicia las cuentas al cargar una escena
+
+        if (scene.name != "MenuInicial" && uiObject != null)
         {
-            // Activa tu objeto de UI en todas las escenas excepto el menú principal
-            if (uiObject != null)
-            {
-                uiObject.SetActive(true);
-            }
+            uiObject.SetActive(true);
         }
-        else
+        else if (uiObject != null)
         {
-            // Desactiva tu objeto de UI en el menú principal
-            if (uiObject != null)
-            {
-                uiObject.SetActive(false);
-            }
+            uiObject.SetActive(false);
         }
     }
 }

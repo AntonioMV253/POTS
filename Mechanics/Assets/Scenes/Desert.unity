@@ -322,6 +322,7 @@ MonoBehaviour:
   textoBombas: {fileID: 30543113}
   textoPrisma: {fileID: 1842546189}
   uiObject: {fileID: 71563215}
+  ganarPanel: {fileID: 0}
 --- !u!114 &71563218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8108,6 +8109,7 @@ MonoBehaviour:
   mainMenu: MenuInicial
   pauseButton: {fileID: 0}
   continueButton: {fileID: 388281722}
+  deathPanel: {fileID: 0}
   objectsToHideOnPause:
   - {fileID: 71563215}
   - {fileID: 1836041676}
@@ -93941,6 +93943,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
+      propertyPath: simulationSpeed
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
       propertyPath: ShapeModule.type
       value: 18
       objectReference: {fileID: 0}
@@ -93966,7 +93972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
       propertyPath: ShapeModule.radiusThickness
-      value: 1.0000
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
       propertyPath: RotationModule.x.minMaxState
@@ -93977,12 +93983,16 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
-      propertyPath: InitialModule.startSize.scalar
+      propertyPath: InitialModule.maxNumParticles
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
       propertyPath: InitialModule.startSize.minScalar
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1bf621f879734754a86663427bfc5775, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
@@ -97454,6 +97464,7 @@ MonoBehaviour:
   playerHealthSignal: {fileID: 11400000, guid: 23f85556626599d469e0d3274641edf4, type: 2}
   pickUpScript: {fileID: 0}
   startingPosition: {fileID: 11400000, guid: 1dcabd2904d76ec4aae677c3922289ac, type: 2}
+  pauseManager: {fileID: 0}
   Speed: 4
   MaxSpeed: 8
   walkSounds:

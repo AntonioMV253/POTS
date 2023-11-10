@@ -12,6 +12,8 @@ TagManager:
   - breakable
   - Break
   - Torch
+  - MenuMuerteTag
+  - PauseManagerTag
   layers:
   - Default
   - TransparentFX

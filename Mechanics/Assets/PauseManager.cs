@@ -11,35 +11,47 @@ public class PauseManager : MonoBehaviour
     public string mainMenu;
     public Button pauseButton;
     public Button continueButton;
+    public GameObject deathPanel; // Asegúrate de que este panel está asignado en el Inspector.
 
     public List<GameObject> objectsToHideOnPause;
     public GameSaveManager gameSaveManager;
     public Transform savedPlayerTransform;
-
-    // Agrega un campo para tu UI o la lista de objetos
-    public GameObject uiObject; // Asigna tu objeto de UI desde el Inspector
-    public List<GameObject> objectsToActivateOnStart; // Asigna tus objetos desde el Inspector
+    public GameObject uiObject;
+    public List<GameObject> objectsToActivateOnStart;
 
     void Awake()
     {
-        // Asegúrate de que el PauseManager sea un objeto DontDestroyOnLoad
-        DontDestroyOnLoad(gameObject);
+        // Evita la duplicación de este objeto en la carga de la escena.
+        GameObject[] objs = GameObject.FindGameObjectsWithTag(gameObject.tag);
+        if (objs.Length > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
     }
 
     void Start()
     {
         isPaused = false;
         pausePanel.SetActive(false);
-        pauseButton.onClick.AddListener(ChangePause);
-        continueButton.onClick.AddListener(ContinueGame);
+        if (pauseButton != null)
+        {
+            pauseButton.onClick.AddListener(ChangePause);
+        }
+        if (continueButton != null)
+        {
+            continueButton.onClick.AddListener(ContinueGame);
+        }
 
-        // Activa tu UI al inicio
         if (uiObject != null)
         {
             uiObject.SetActive(true);
         }
 
-        // Activa una lista de objetos al inicio
         if (objectsToActivateOnStart != null)
         {
             foreach (var obj in objectsToActivateOnStart)
@@ -49,44 +61,89 @@ public class PauseManager : MonoBehaviour
         }
     }
 
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Desactiva los paneles al cargar una nueva escena
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(false);
+        }
+
+        if (deathPanel != null)
+        {
+            deathPanel.SetActive(false);
+        }
+
+        // Restablece el estado del juego si estaba pausado
+        isPaused = false;
+        Time.timeScale = 1f;
+
+        // Restablece las referencias necesarias, como la del jugador
+        savedPlayerTransform = null;
+
+        // Activa cualquier objeto UI necesario para la nueva escena
+        if (scene.name != "MenuInicial" && uiObject != null)
+        {
+            uiObject.SetActive(true);
+        }
+        else if (uiObject != null)
+        {
+            uiObject.SetActive(false);
+        }
+    }
+
     public void ChangePause()
     {
         isPaused = !isPaused;
-        if (isPaused)
+        if (pausePanel != null)
         {
-            Time.timeScale = 0f;
-            foreach (var obj in objectsToHideOnPause)
-            {
-                obj.SetActive(false);
-            }
+            pausePanel.SetActive(isPaused);
+            Time.timeScale = isPaused ? 0f : 1f;
+        }
+
+        foreach (var obj in objectsToHideOnPause)
+        {
+            if (obj != null)
+                obj.SetActive(!isPaused);
+        }
+    }
+
+    public void ActivateDeathPanel()
+    {
+        if (deathPanel != null)
+        {
+            deathPanel.SetActive(true); // Activa el panel de muerte
+            Time.timeScale = 0f; // Pausa el juego
+            isPaused = true;
         }
         else
         {
-            Time.timeScale = 1f;
-            transform.position = savedPlayerTransform.position;
-            transform.rotation = savedPlayerTransform.rotation;
-            transform.localScale = savedPlayerTransform.localScale;
-
-            foreach (var obj in objectsToHideOnPause)
-            {
-                obj.SetActive(true);
-            }
+            Debug.LogError("Death panel not assigned.");
         }
-        pausePanel.SetActive(isPaused);
+    }
+
+    public void DeactivateDeathPanel()
+    {
+        if (deathPanel != null)
+        {
+            deathPanel.SetActive(false);
+            Time.timeScale = 1f;
+            isPaused = false;
+        }
+        else
+        {
+            Debug.LogError("Death panel not assigned.");
+        }
     }
 
     public void ContinueGame()
     {
-        isPaused = false;
-        Time.timeScale = 1f;
-        transform.position = savedPlayerTransform.position;
-        transform.rotation = savedPlayerTransform.rotation;
-        transform.localScale = savedPlayerTransform.localScale;
-        pausePanel.SetActive(false);
-        foreach (var obj in objectsToHideOnPause)
-        {
-            obj.SetActive(true);
-        }
+        ChangePause();
     }
 
     public void QuitToMain()
